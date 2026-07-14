@@ -243,6 +243,28 @@ a{color:inherit}
 .stats-grid .num{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:2.5rem;color:var(--cy);margin-bottom:.3rem}
 .stats-grid .lbl{font-size:.85rem;color:var(--fade);font-weight:600}
 
+/* ---------- GALLERY ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:160px;gap:1rem}
+.gallery-item{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);cursor:pointer;background:var(--bg2)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.15) 45%,transparent 70%);opacity:0;transition:opacity .3s}
+.gallery-item:hover::after{opacity:1}
+.gallery-cap{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.2rem;opacity:0;transform:translateY(8px);transition:all .3s;z-index:1}
+.gallery-item:hover .gallery-cap{opacity:1;transform:translateY(0)}
+.gallery-cap b{display:block;color:#fff;font-size:.92rem;font-family:'Chakra Petch',sans-serif;margin-bottom:.2rem}
+.gallery-cap span{color:rgba(255,255,255,.7);font-size:.78rem}
+.gallery-item.g1{grid-column:span 3;grid-row:span 2}
+.gallery-item.g2{grid-column:span 3;grid-row:span 1}
+.gallery-item.g3{grid-column:span 3;grid-row:span 1}
+.gallery-item.g4{grid-column:span 2;grid-row:span 1}
+.gallery-item.g5{grid-column:span 2;grid-row:span 1}
+.gallery-item.g6{grid-column:span 2;grid-row:span 1}
+@media(max-width:780px){
+  .gallery-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+  .gallery-item.g1,.gallery-item.g2,.gallery-item.g3,.gallery-item.g4,.gallery-item.g5,.gallery-item.g6{grid-column:span 1;grid-row:span 1}
+}
+
 .carousel-wrap{position:relative;padding:0 3.2rem}
 .carousel{display:flex;gap:1rem;overflow-x:auto;scroll-behavior:smooth;padding:.5rem 0 1rem;scrollbar-width:none}
 .carousel::-webkit-scrollbar{display:none}
@@ -295,6 +317,7 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   <div class="nav-brand"><img class="nav-logo" src="images/virtus-wordmark.png" alt="VIRTUS"></div>
   <div class="nav-links">
     <a href="#plataforma">Plataforma</a>
+    <a href="#galeria">Galería</a>
     <a href="#niveles" class="active">Niveles</a>
     <a href="#contacto">Contacto</a>
   </div>
@@ -379,6 +402,40 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
       <div class="feature-icon"><i class="fas fa-building-columns"></i></div>
       <h3>Para la institución</h3>
       <p>Gestión de docentes, estudiantes y clases por sede, currículo estandarizado para los 8 niveles, y control total desde un panel administrativo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="galeria">
+  <div class="section-head">
+    <span class="section-tag">Así se aprende en VIRTUS</span>
+    <h2 class="section-title">De la idea al robot terminado</h2>
+    <p class="section-sub">Programación, electrónica y diseño 3D en las manos de los estudiantes, clase a clase.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item g1">
+      <img src="images/gallery-1.jpg" alt="Estudiantes diseñando en 3D y armando robótica">
+      <div class="gallery-cap"><b>Diseño y robótica en un mismo espacio</b><span>Modelado 3D, brazos robóticos y electrónica</span></div>
+    </div>
+    <div class="gallery-item g2">
+      <img src="images/gallery-2.jpg" alt="Estudiante armando su propio robot">
+      <div class="gallery-cap"><b>Arman su propio robot</b><span>Pieza a pieza, con sus manos</span></div>
+    </div>
+    <div class="gallery-item g3">
+      <img src="images/gallery-3.jpg" alt="Estudiante programando un brazo robótico">
+      <div class="gallery-cap"><b>Programan y controlan robots reales</b><span>Brazo robótico con Arduino</span></div>
+    </div>
+    <div class="gallery-item g4">
+      <img src="images/gallery-4.jpg" alt="Estudiante programando un dron con bloques de código">
+      <div class="gallery-cap"><b>Código en bloques, resultados reales</b><span>De la pantalla al dron en sus manos</span></div>
+    </div>
+    <div class="gallery-item g5">
+      <img src="images/gallery-5.jpg" alt="Estudiante explorando diseño 3D">
+      <div class="gallery-cap"><b>Diseño 3D interactivo</b><span>Explorando piezas y ensambles</span></div>
+    </div>
+    <div class="gallery-item g6">
+      <img src="images/gallery-6.jpg" alt="Estudiante escribiendo su primer código">
+      <div class="gallery-cap"><b>Su primer código</b><span>Paso a paso, a su ritmo</span></div>
     </div>
   </div>
 </section>
