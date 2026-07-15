@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIRTUS STEAM — Robótica Educativa en Ecuador | Plataforma para Instituciones</title>
-<meta name="description" content="VIRTUS STEAM: plataforma de robótica, programación y diseño 3D para instituciones educativas en Ecuador. Clases guiadas, 8 niveles, seguimiento real. Con sede en Ambato.">
+<meta name="description" content="VIRTUS STEAM: programa de ingeniería, robótica y tecnología para instituciones educativas en Ecuador, desde Inicial hasta Colegio. Formación con virtudes y seguimiento real. Con sede en Ambato.">
 <meta name="keywords" content="robotica educativa Ecuador, robotica para colegios Ambato, STEAM Ecuador, plataforma educativa robotica, clases de robotica Ambato, programacion para niños Ecuador, diseño 3D estudiantes">
 <meta name="author" content="VIRTUS STEAM">
 <link rel="canonical" href="https://virtusrobotica.com/">
@@ -15,13 +15,13 @@
 <meta property="og:site_name" content="VIRTUS STEAM">
 <meta property="og:locale" content="es_EC">
 <meta property="og:title" content="VIRTUS STEAM — Robótica Educativa en Ecuador">
-<meta property="og:description" content="Plataforma de robótica, programación y diseño 3D para instituciones educativas. 8 niveles, clases guiadas y seguimiento real. Con sede en Ambato, Ecuador.">
+<meta property="og:description" content="Programa de ingeniería, robótica y tecnología para instituciones educativas, desde Inicial hasta Colegio. Formación con virtudes y seguimiento real. Con sede en Ambato, Ecuador.">
 <meta property="og:image" content="https://virtusrobotica.com/images/robot-hero.png">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="VIRTUS STEAM — Robótica Educativa en Ecuador">
-<meta name="twitter:description" content="Plataforma de robótica, programación y diseño 3D para instituciones educativas. 8 niveles, clases guiadas y seguimiento real.">
+<meta name="twitter:description" content="Programa de ingeniería, robótica y tecnología para instituciones educativas, desde Inicial hasta Colegio. Formación con virtudes y seguimiento real.">
 <meta name="twitter:image" content="https://virtusrobotica.com/images/robot-hero.png">
 
 <!-- Geo / Local -->
@@ -169,7 +169,7 @@ a{color:inherit}
   animation:shrink 3.6s ease-in-out infinite;
 }
 .robot-img{
-  position:relative;z-index:2;width:min(74%,360px);filter:drop-shadow(0 20px 35px rgba(0,0,0,.6));
+  display:block;width:min(74%,360px);filter:drop-shadow(0 20px 35px rgba(0,0,0,.6));
   animation:float 3.6s ease-in-out infinite;
 }
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
@@ -227,10 +227,15 @@ a{color:inherit}
 
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem}
 .feature-card{
+  position:relative;overflow:hidden;
   background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:2.2rem;
   transition:transform .25s,border-color .25s;
 }
-.feature-card:hover{transform:translateY(-6px);border-color:rgba(34,224,255,.4)}
+.feature-card::before{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(115deg,transparent,rgba(34,224,255,.12),transparent);
+  transform:skewX(-20deg);transition:left .7s ease;pointer-events:none}
+.feature-card:hover::before{left:130%}
+.feature-card:hover{transform:translateY(-6px);border-color:rgba(34,224,255,.4);box-shadow:0 12px 30px rgba(0,0,0,.35)}
 .feature-icon{
   width:52px;height:52px;border-radius:12px;background:var(--cy-dim);border:1px solid rgba(34,224,255,.3);
   display:flex;align-items:center;justify-content:center;font-size:1.25rem;color:var(--cy);margin-bottom:1.4rem;
@@ -302,6 +307,8 @@ a{color:inherit}
 
 /* ---------- MANIFESTO / NEW CONTENT ---------- */
 .hero-manifesto{font-family:'Chakra Petch',sans-serif;font-style:italic;font-weight:600;color:var(--cy2);font-size:1.05rem;margin-bottom:1.3rem}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 8px rgba(122,245,255,.25)}50%{text-shadow:0 0 20px rgba(122,245,255,.75)}}
+.hero-manifesto{animation:glowPulse 3.2s ease-in-out infinite}
 
 .pillar-num{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:.75rem;color:var(--cy);letter-spacing:2px;margin-bottom:.6rem;display:block}
 
@@ -327,6 +334,20 @@ a{color:inherit}
 .manifesto-quote blockquote{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.4;color:#fff;margin-bottom:1.4rem;font-style:italic}
 .manifesto-quote p{color:var(--fade);font-size:1rem;line-height:1.8;margin-bottom:1rem}
 .manifesto-quote .closing{color:var(--cy);font-weight:700;font-size:1.05rem;margin-top:1.5rem;line-height:1.6}
+
+/* ---------- TECH FX ---------- */
+.tech-grid{position:relative}
+.tech-grid::after{
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:radial-gradient(rgba(34,224,255,.16) 1px, transparent 1px);
+  background-size:28px 28px;opacity:.45;
+  -webkit-mask-image:radial-gradient(ellipse 70% 55% at 50% 25%, #000 35%, transparent 78%);
+  mask-image:radial-gradient(ellipse 70% 55% at 50% 25%, #000 35%, transparent 78%);
+}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+.robot-parallax{position:relative;z-index:2;transition:transform .18s ease-out}
 
 .final-cta{position:relative;padding:6rem 8%;text-align:center;overflow:hidden;background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .final-cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:340px;background:radial-gradient(ellipse,rgba(34,224,255,.14),transparent 65%)}
@@ -362,7 +383,6 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
     <a href="#manifiesto">Filosofía</a>
     <a href="#plataforma">Plataforma</a>
     <a href="#galeria">Galería</a>
-    <a href="#niveles" class="active">Niveles</a>
     <a href="#contacto">Contacto</a>
   </div>
   <a class="nav-cta" href="https://plataforma.virtusrobotica.com/login.html">Ingresar</a>
@@ -382,13 +402,13 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
       <span class="hero-tag"><i class="fas fa-bolt"></i>&nbsp; Robótica educativa para instituciones</span>
       <p class="hero-manifesto">"Tecnología por fuera. Virtud por dentro."</p>
       <h1>Construye tu<br><span>futuro robótico</span></h1>
-      <p>Programa integral de ingeniería, robótica y tecnología para instituciones educativas, desde Segundo de EGB hasta Bachillerato. Formamos personas capaces de crear tecnología con inteligencia, creatividad y sentido del bien común.</p>
+      <p>Programa integral de ingeniería, robótica y tecnología para instituciones educativas, desde Inicial, Escuela y Colegio. Formamos personas capaces de crear tecnología con inteligencia, creatividad y sentido del bien común.</p>
       <div class="hero-actions">
         <a class="btn-pill" href="https://plataforma.virtusrobotica.com/login.html">Ingresar a la plataforma</a>
         <a class="link-ghost" href="#contacto"><i class="fas fa-comment-dots"></i> Solicitar una demo</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>8</b><span>NIVELES</span></div>
+        <div class="stat"><b>8</b><span>PILARES</span></div>
         <div class="stat"><b>3+</b><span>SEDES</span></div>
         <div class="stat"><b>100%</b><span>EN LÍNEA</span></div>
       </div>
@@ -396,41 +416,20 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
     <div class="hero-visual">
       <div class="orb-glow"></div>
       <div class="robot-shadow"></div>
-      <img class="robot-img" src="images/robot-hero.png" alt="Robot VIRTUS STEAM">
+      <div class="robot-parallax"><img class="robot-img" src="images/robot-hero.png" alt="Robot VIRTUS STEAM"></div>
       <div class="callout callout-1"><div class="dot"></div><div class="stick"></div><div class="txt"><b>Sensor de visión</b>Reconocimiento en tiempo real</div></div>
       <div class="callout callout-2"><div class="row" style="display:flex;align-items:center;gap:.6rem"><div class="txt" style="text-align:right"><b>Brazos articulados</b>Control de precisión</div><div class="stick"></div><div class="dot"></div></div></div>
-      <div class="callout callout-3"><div class="dot"></div><div class="stick"></div><div class="txt"><b>Núcleo VIRTUS</b>8 niveles de progreso</div></div>
+      <div class="callout callout-3"><div class="dot"></div><div class="stick"></div><div class="txt"><b>Núcleo VIRTUS</b>8 pilares del programa</div></div>
     </div>
   </div>
-  <div class="page-counter">01<span>/ 08 NIVELES</span></div>
+  <div class="page-counter">08<span>PILARES VIRTUS</span></div>
 </section>
 
-<div class="levels-strip" id="niveles">
-  <div class="levels-track">
-    <div class="level-chip"><b>N1</b> Constructores</div>
-    <div class="level-chip"><b>N2</b> Ing. Solares</div>
-    <div class="level-chip"><b>N3</b> Pilotos</div>
-    <div class="level-chip"><b>N4</b> Dinorobótica</div>
-    <div class="level-chip"><b>N5</b> Primer Código</div>
-    <div class="level-chip"><b>N6</b> Arduino Maker</div>
-    <div class="level-chip"><b>N7</b> Brazo Robótico</div>
-    <div class="level-chip"><b>N8</b> Robot Bailarín</div>
-    <div class="level-chip"><b>N1</b> Constructores</div>
-    <div class="level-chip"><b>N2</b> Ing. Solares</div>
-    <div class="level-chip"><b>N3</b> Pilotos</div>
-    <div class="level-chip"><b>N4</b> Dinorobótica</div>
-    <div class="level-chip"><b>N5</b> Primer Código</div>
-    <div class="level-chip"><b>N6</b> Arduino Maker</div>
-    <div class="level-chip"><b>N7</b> Brazo Robótico</div>
-    <div class="level-chip"><b>N8</b> Robot Bailarín</div>
-  </div>
-</div>
-
-<section class="section" id="manifiesto">
+<section class="section tech-grid" id="manifiesto">
   <div class="section-head">
     <span class="section-tag">Nuestro manifiesto</span>
     <h2 class="section-title">¿Qué es Virtus STEAM?</h2>
-    <p class="section-sub">Un programa integral de ingeniería, robótica, tecnología e innovación para instituciones educativas, que acompaña a los estudiantes desde Segundo de Educación General Básica hasta Bachillerato. Nuestra misión no es únicamente enseñar robótica: es formar personas capaces de crear tecnología con inteligencia, creatividad, responsabilidad y sentido del bien común.</p>
+    <p class="section-sub">Un programa integral de ingeniería, robótica, tecnología e innovación para instituciones educativas, que acompaña a los estudiantes durante toda su etapa escolar: Inicial, Escuela y Colegio. Nuestra misión no es únicamente enseñar robótica: es formar personas capaces de crear tecnología con inteligencia, creatividad, responsabilidad y sentido del bien común.</p>
   </div>
   <div class="features-grid">
     <div class="feature-card">
@@ -456,7 +455,7 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   </div>
 </section>
 
-<section class="section" id="pilares">
+<section class="section tech-grid" id="pilares">
   <div class="section-head">
     <span class="section-tag">Nuestro currículo</span>
     <h2 class="section-title">Los 8 pilares de Virtus STEAM</h2>
@@ -526,7 +525,7 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
     <div class="feature-card">
       <div class="feature-icon"><i class="fas fa-building-columns"></i></div>
       <h3>Para la institución</h3>
-      <p>Gestión de docentes, estudiantes y clases por sede, currículo estandarizado para los 8 niveles, y control total desde un panel administrativo.</p>
+      <p>Gestión de docentes, estudiantes y clases por sede, currículo estandarizado en los 8 pilares Virtus, y control total desde un panel administrativo.</p>
     </div>
   </div>
 </section>
@@ -535,7 +534,7 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   <div class="section-head">
     <span class="section-tag">Cómo trabajamos</span>
     <h2 class="section-title">Nuestra metodología</h2>
-    <p class="section-sub">Todas las clases siguen el mismo ciclo de aprendizaje, desde los primeros años hasta Bachillerato, aumentando progresivamente su complejidad.</p>
+    <p class="section-sub">Todas las clases siguen el mismo ciclo de aprendizaje, desde Inicial hasta Colegio, aumentando progresivamente su complejidad.</p>
   </div>
   <div class="method-flow">
     <div class="method-step"><div class="method-num">1</div><span>Imaginar</span></div>
@@ -599,34 +598,12 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
 
 <div class="stats-band">
   <div class="stats-grid">
-    <div><div class="num">8</div><div class="lbl">Niveles de aprendizaje</div></div>
-    <div><div class="num">100%</div><div class="lbl">Currículo unificado</div></div>
-    <div><div class="num">4</div><div class="lbl">Roles con vista propia</div></div>
+    <div><div class="num" data-target="8">0</div><div class="lbl">Pilares del programa</div></div>
+    <div><div class="num" data-target="100" data-suffix="%">0</div><div class="lbl">Currículo unificado</div></div>
+    <div><div class="num" data-target="4">0</div><div class="lbl">Roles con vista propia</div></div>
     <div><div class="num">24/7</div><div class="lbl">Acceso en línea</div></div>
   </div>
 </div>
-
-<section class="section">
-  <div class="section-head">
-    <span class="section-tag">Ruta de aprendizaje</span>
-    <h2 class="section-title">Los 8 niveles VIRTUS</h2>
-    <p class="section-sub">De los primeros bloques a la programación de robots que bailan — una progresión pensada para cada edad.</p>
-  </div>
-  <div class="carousel-wrap">
-    <div class="carousel-arrow prev" onclick="document.getElementById('lvlCarousel').scrollBy({left:-320,behavior:'smooth'})"><i class="fas fa-chevron-left"></i></div>
-    <div class="carousel" id="lvlCarousel">
-      <div class="carousel-card"><div class="lvl-num">N1</div><div class="lvl-name">Constructores</div></div>
-      <div class="carousel-card"><div class="lvl-num">N2</div><div class="lvl-name">Ing. Solares</div></div>
-      <div class="carousel-card"><div class="lvl-num">N3</div><div class="lvl-name">Pilotos</div></div>
-      <div class="carousel-card"><div class="lvl-num">N4</div><div class="lvl-name">Dinorobótica</div></div>
-      <div class="carousel-card"><div class="lvl-num">N5</div><div class="lvl-name">Primer Código</div></div>
-      <div class="carousel-card"><div class="lvl-num">N6</div><div class="lvl-name">Arduino Maker</div></div>
-      <div class="carousel-card"><div class="lvl-num">N7</div><div class="lvl-name">Brazo Robótico</div></div>
-      <div class="carousel-card"><div class="lvl-num">N8</div><div class="lvl-name">Robot Bailarín</div></div>
-    </div>
-    <div class="carousel-arrow next" onclick="document.getElementById('lvlCarousel').scrollBy({left:320,behavior:'smooth'})"><i class="fas fa-chevron-right"></i></div>
-  </div>
-</section>
 
 <section class="section" id="ecosistema">
   <div class="section-head">
@@ -759,5 +736,76 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   </div>
 </footer>
 
+<script>
+// ---- Scroll reveal ----
+(function(){
+  var targets = document.querySelectorAll('.section-head, .feature-card, .check-item, .gallery-item, .tag-chip, .method-step, .tool-item');
+  targets.forEach(function(el, i){
+    el.classList.add('reveal');
+    el.style.transitionDelay = (Math.min(i % 6, 6) * 0.06) + 's';
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function(el){ io.observe(el); });
+  } else {
+    targets.forEach(function(el){ el.classList.add('visible'); });
+  }
+})();
+
+// ---- Animated counters ----
+(function(){
+  var counters = document.querySelectorAll('.stats-grid .num[data-target]');
+  function animate(el){
+    var target = parseFloat(el.getAttribute('data-target'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var dur = 1400;
+    var start = null;
+    function tick(ts){
+      if (!start) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if ('IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { animate(entry.target); io2.unobserve(entry.target); }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function(el){ io2.observe(el); });
+  } else {
+    counters.forEach(animate);
+  }
+})();
+
+// ---- Hero parallax ----
+(function(){
+  var visual = document.querySelector('.hero-visual');
+  var robot = document.querySelector('.robot-parallax');
+  var orb = document.querySelector('.orb-glow');
+  if (!visual || !robot) return;
+  visual.addEventListener('mousemove', function(e){
+    var rect = visual.getBoundingClientRect();
+    var x = (e.clientX - rect.left) / rect.width - 0.5;
+    var y = (e.clientY - rect.top) / rect.height - 0.5;
+    robot.style.transform = 'translate(' + (x*18) + 'px, ' + (y*18) + 'px)';
+    if (orb) orb.style.transform = 'translate(' + (x*-16) + 'px, ' + (y*-16) + 'px)';
+  });
+  visual.addEventListener('mouseleave', function(){
+    robot.style.transform = '';
+    if (orb) orb.style.transform = '';
+  });
+})();
+</script>
 </body>
 </html>
