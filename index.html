@@ -285,6 +285,21 @@ a{color:inherit}
 .carousel-arrow.prev{left:0}
 .carousel-arrow.next{right:0}
 
+/* ---------- TOOLS / SOFTWARE STRIP ---------- */
+.tools-section{padding:5rem 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tools-section .section-head{padding:0 8%;max-width:680px;margin:0 0 3rem}
+.tools-strip{position:relative;overflow:hidden}
+.tools-strip::before,.tools-strip::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
+.tools-strip::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}
+.tools-strip::after{right:0;background:linear-gradient(270deg,var(--bg2),transparent)}
+.tools-track{display:flex;gap:3.4rem;width:max-content;align-items:center;animation:toolsScroll 34s linear infinite;padding:0 3.2rem}
+.tools-strip:hover .tools-track{animation-play-state:paused}
+@keyframes toolsScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tool-item{display:flex;flex-direction:column;align-items:center;gap:.7rem;flex-shrink:0;width:100px}
+.tool-item img{height:50px;width:auto;max-width:88px;object-fit:contain;opacity:.78;transition:opacity .25s,transform .25s}
+.tool-item:hover img{opacity:1;transform:translateY(-3px)}
+.tool-item span{font-size:.72rem;color:var(--faint);font-weight:600;text-align:center;letter-spacing:.3px;white-space:nowrap}
+
 .final-cta{position:relative;padding:6rem 8%;text-align:center;overflow:hidden;background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .final-cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:340px;background:radial-gradient(ellipse,rgba(34,224,255,.14),transparent 65%)}
 .final-cta-inner{position:relative;z-index:1;max-width:620px;margin:0 auto}
@@ -468,6 +483,42 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
       <div class="carousel-card"><div class="lvl-num">N8</div><div class="lvl-name">Robot Bailarín</div></div>
     </div>
     <div class="carousel-arrow next" onclick="document.getElementById('lvlCarousel').scrollBy({left:320,behavior:'smooth'})"><i class="fas fa-chevron-right"></i></div>
+  </div>
+</section>
+
+<section class="tools-section">
+  <div class="section-head">
+    <span class="section-tag">Con qué trabajan los estudiantes</span>
+    <h2 class="section-title">Herramientas y software profesional</h2>
+    <p class="section-sub">Desde bloques visuales para los más pequeños hasta software de diseño e ingeniería real, el mismo que usan las empresas.</p>
+  </div>
+  <div class="tools-strip">
+    <div class="tools-track">
+      <div class="tool-item"><img src="images/tools/scratch.png" alt="Scratch" loading="lazy"><span>Scratch</span></div>
+      <div class="tool-item"><img src="images/tools/scratchjr.png" alt="ScratchJr" loading="lazy"><span>ScratchJr</span></div>
+      <div class="tool-item"><img src="images/tools/tinkercad.png" alt="Tinkercad" loading="lazy"><span>Tinkercad</span></div>
+      <div class="tool-item"><img src="images/tools/makersempire.png" alt="Makers Empire 3D" loading="lazy"><span>Makers Empire 3D</span></div>
+      <div class="tool-item"><img src="images/tools/solidworks.png" alt="SolidWorks" loading="lazy"><span>SolidWorks</span></div>
+      <div class="tool-item"><img src="images/tools/inventor.png" alt="Autodesk Inventor" loading="lazy"><span>Autodesk Inventor</span></div>
+      <div class="tool-item"><img src="images/tools/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
+      <div class="tool-item"><img src="images/tools/python.png" alt="Python" loading="lazy"><span>Python</span></div>
+      <div class="tool-item"><img src="images/tools/micropython.png" alt="MicroPython" loading="lazy"><span>MicroPython</span></div>
+      <div class="tool-item"><img src="images/tools/unity.png" alt="Unity" loading="lazy"><span>Unity</span></div>
+      <div class="tool-item"><img src="images/tools/lego.png" alt="LEGO" loading="lazy"><span>LEGO</span></div>
+      <div class="tool-item"><img src="images/tools/creality.png" alt="Creality" loading="lazy"><span>Creality</span></div>
+      <div class="tool-item"><img src="images/tools/scratch.png" alt="Scratch" loading="lazy"><span>Scratch</span></div>
+      <div class="tool-item"><img src="images/tools/scratchjr.png" alt="ScratchJr" loading="lazy"><span>ScratchJr</span></div>
+      <div class="tool-item"><img src="images/tools/tinkercad.png" alt="Tinkercad" loading="lazy"><span>Tinkercad</span></div>
+      <div class="tool-item"><img src="images/tools/makersempire.png" alt="Makers Empire 3D" loading="lazy"><span>Makers Empire 3D</span></div>
+      <div class="tool-item"><img src="images/tools/solidworks.png" alt="SolidWorks" loading="lazy"><span>SolidWorks</span></div>
+      <div class="tool-item"><img src="images/tools/inventor.png" alt="Autodesk Inventor" loading="lazy"><span>Autodesk Inventor</span></div>
+      <div class="tool-item"><img src="images/tools/arduino.png" alt="Arduino" loading="lazy"><span>Arduino</span></div>
+      <div class="tool-item"><img src="images/tools/python.png" alt="Python" loading="lazy"><span>Python</span></div>
+      <div class="tool-item"><img src="images/tools/micropython.png" alt="MicroPython" loading="lazy"><span>MicroPython</span></div>
+      <div class="tool-item"><img src="images/tools/unity.png" alt="Unity" loading="lazy"><span>Unity</span></div>
+      <div class="tool-item"><img src="images/tools/lego.png" alt="LEGO" loading="lazy"><span>LEGO</span></div>
+      <div class="tool-item"><img src="images/tools/creality.png" alt="Creality" loading="lazy"><span>Creality</span></div>
+    </div>
   </div>
 </section>
 
