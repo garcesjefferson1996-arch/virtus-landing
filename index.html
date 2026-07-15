@@ -300,6 +300,34 @@ a{color:inherit}
 .tool-item:hover img{opacity:1;transform:translateY(-3px)}
 .tool-item span{font-size:.72rem;color:var(--faint);font-weight:600;text-align:center;letter-spacing:.3px;white-space:nowrap}
 
+/* ---------- MANIFESTO / NEW CONTENT ---------- */
+.hero-manifesto{font-family:'Chakra Petch',sans-serif;font-style:italic;font-weight:600;color:var(--cy2);font-size:1.05rem;margin-bottom:1.3rem}
+
+.pillar-num{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:.75rem;color:var(--cy);letter-spacing:2px;margin-bottom:.6rem;display:block}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.tag-chip{padding:.55rem 1.15rem;border-radius:50px;border:1px solid var(--line);background:var(--bg2);color:var(--fade);font-size:.78rem;font-weight:600}
+
+.method-flow{display:flex;align-items:center;flex-wrap:wrap;gap:.2rem;margin-top:.5rem}
+.method-step{display:flex;flex-direction:column;align-items:center;gap:.6rem;text-align:center;width:118px}
+.method-num{width:46px;height:46px;border-radius:50%;background:var(--cy-dim);border:1px solid rgba(34,224,255,.35);display:flex;align-items:center;justify-content:center;color:var(--cy);font-family:'Chakra Petch',sans-serif;font-weight:700}
+.method-step span{font-size:.76rem;color:var(--fade);font-weight:600}
+.method-arrow{color:var(--faint);font-size:1rem;flex-shrink:0;margin:0 .2rem;align-self:flex-start;margin-top:20px}
+@media(max-width:900px){.method-flow{justify-content:center}.method-arrow{display:none}}
+
+.progressive-note{color:var(--fade);font-size:.95rem;line-height:1.8;max-width:720px;margin-top:2.6rem;padding-top:2.2rem;border-top:1px solid var(--line)}
+
+.checklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem;margin-top:.5rem}
+.check-item{display:flex;align-items:flex-start;gap:.7rem;font-size:.92rem;color:var(--fade);line-height:1.5}
+.check-item i{color:var(--cy);margin-top:.25rem;flex-shrink:0}
+
+.manifesto-quote{padding:6rem 8%;text-align:center;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.manifesto-quote::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:340px;background:radial-gradient(ellipse,rgba(34,224,255,.12),transparent 65%)}
+.manifesto-quote-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.manifesto-quote blockquote{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.4;color:#fff;margin-bottom:1.4rem;font-style:italic}
+.manifesto-quote p{color:var(--fade);font-size:1rem;line-height:1.8;margin-bottom:1rem}
+.manifesto-quote .closing{color:var(--cy);font-weight:700;font-size:1.05rem;margin-top:1.5rem;line-height:1.6}
+
 .final-cta{position:relative;padding:6rem 8%;text-align:center;overflow:hidden;background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .final-cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:340px;background:radial-gradient(ellipse,rgba(34,224,255,.14),transparent 65%)}
 .final-cta-inner{position:relative;z-index:1;max-width:620px;margin:0 auto}
@@ -331,6 +359,7 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
 <nav class="nav">
   <div class="nav-brand"><img class="nav-logo" src="images/virtus-wordmark.png" alt="VIRTUS"></div>
   <div class="nav-links">
+    <a href="#manifiesto">Filosofía</a>
     <a href="#plataforma">Plataforma</a>
     <a href="#galeria">Galería</a>
     <a href="#niveles" class="active">Niveles</a>
@@ -351,8 +380,9 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   <div class="hero-grid">
     <div class="hero-copy">
       <span class="hero-tag"><i class="fas fa-bolt"></i>&nbsp; Robótica educativa para instituciones</span>
+      <p class="hero-manifesto">"Tecnología por fuera. Virtud por dentro."</p>
       <h1>Construye tu<br><span>futuro robótico</span></h1>
-      <p>Robótica, programación y diseño 3D con valores humanos, organizados en 8 niveles. Clases guiadas, planificación docente y seguimiento real del progreso.</p>
+      <p>Programa integral de ingeniería, robótica y tecnología para instituciones educativas, desde Segundo de EGB hasta Bachillerato. Formamos personas capaces de crear tecnología con inteligencia, creatividad y sentido del bien común.</p>
       <div class="hero-actions">
         <a class="btn-pill" href="https://plataforma.virtusrobotica.com/login.html">Ingresar a la plataforma</a>
         <a class="link-ghost" href="#contacto"><i class="fas fa-comment-dots"></i> Solicitar una demo</a>
@@ -396,6 +426,86 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   </div>
 </div>
 
+<section class="section" id="manifiesto">
+  <div class="section-head">
+    <span class="section-tag">Nuestro manifiesto</span>
+    <h2 class="section-title">¿Qué es Virtus STEAM?</h2>
+    <p class="section-sub">Un programa integral de ingeniería, robótica, tecnología e innovación para instituciones educativas, que acompaña a los estudiantes desde Segundo de Educación General Básica hasta Bachillerato. Nuestra misión no es únicamente enseñar robótica: es formar personas capaces de crear tecnología con inteligencia, creatividad, responsabilidad y sentido del bien común.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3>Nuestra filosofía</h3>
+      <p>La robótica es mucho más que construir un robot o aprender un lenguaje de programación. Es una oportunidad para desarrollar el pensamiento crítico, la creatividad, el trabajo colaborativo y la capacidad de resolver problemas reales. Una máquina puede ser inteligente. Pero solamente una persona puede actuar con amor, prudencia, justicia y responsabilidad.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+      <h3>Nuestra inspiración</h3>
+      <p>Virtus STEAM nace inspirado por la visión cristiana de la persona y por la enseñanza social de la Iglesia, especialmente el llamado del Papa León XIV a poner la dignidad humana en el centro del desarrollo tecnológico y del uso de la inteligencia artificial. La tecnología nunca reemplaza al ser humano; debe ayudarlo a desarrollar plenamente sus talentos y a servir mejor a los demás.</p>
+    </div>
+  </div>
+  <div class="tag-row">
+    <span class="tag-chip">Pensar como ingenieros</span>
+    <span class="tag-chip">Crear como diseñadores</span>
+    <span class="tag-chip">Programar con lógica</span>
+    <span class="tag-chip">Innovar con creatividad</span>
+    <span class="tag-chip">Trabajar colaborativamente</span>
+    <span class="tag-chip">Liderar con humildad</span>
+    <span class="tag-chip">Usar la tecnología con responsabilidad</span>
+    <span class="tag-chip">Servir con sus conocimientos</span>
+  </div>
+</section>
+
+<section class="section" id="pilares">
+  <div class="section-head">
+    <span class="section-tag">Nuestro currículo</span>
+    <h2 class="section-title">Los 8 pilares de Virtus STEAM</h2>
+    <p class="section-sub">Cada clase, cada proyecto y cada robot se construyen sobre estos ocho pilares.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="pillar-num">01</span>
+      <h3>Ingeniería y Construcción</h3>
+      <p>Observar problemas, diseñar soluciones y construir prototipos funcionales mediante el ciclo de diseño de ingeniería.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">02</span>
+      <h3>Pensamiento Computacional y Programación</h3>
+      <p>Desde las primeras secuencias hasta la programación avanzada, una forma lógica y estructurada de resolver problemas.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">03</span>
+      <h3>Electrónica y Robótica</h3>
+      <p>Cómo funcionan los robots, los circuitos, los sensores y los sistemas inteligentes, progresivamente según la edad.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">04</span>
+      <h3>Diseño e Innovación</h3>
+      <p>Transformar ideas en modelos digitales mediante herramientas de diseño tridimensional y fabricación digital.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">05</span>
+      <h3>Fabricación Digital</h3>
+      <p>Fabricar, ensamblar y mejorar sus propias creaciones utilizando tecnologías como la impresión 3D.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">06</span>
+      <h3>Aprendizaje Basado en Proyectos</h3>
+      <p>Cada trimestre culmina con un proyecto integrador que responde a un desafío real y aplica lo aprendido.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">07</span>
+      <h3>Virtudes y Liderazgo</h3>
+      <p>Las virtudes no se enseñan como asignatura aparte: se viven al diseñar, construir, colaborar, equivocarse, mejorar y servir.</p>
+    </div>
+    <div class="feature-card">
+      <span class="pillar-num">08</span>
+      <h3>Ética y Humanismo Digital</h3>
+      <p>Toda innovación implica una responsabilidad ética; la inteligencia artificial debe estar al servicio de las personas y del bien común.</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="plataforma">
   <div class="section-head">
     <span class="section-tag">Qué encuentra cada usuario</span>
@@ -418,6 +528,38 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
       <h3>Para la institución</h3>
       <p>Gestión de docentes, estudiantes y clases por sede, currículo estandarizado para los 8 niveles, y control total desde un panel administrativo.</p>
     </div>
+  </div>
+</section>
+
+<section class="section" id="metodologia">
+  <div class="section-head">
+    <span class="section-tag">Cómo trabajamos</span>
+    <h2 class="section-title">Nuestra metodología</h2>
+    <p class="section-sub">Todas las clases siguen el mismo ciclo de aprendizaje, desde los primeros años hasta Bachillerato, aumentando progresivamente su complejidad.</p>
+  </div>
+  <div class="method-flow">
+    <div class="method-step"><div class="method-num">1</div><span>Imaginar</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">2</div><span>Diseñar</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">3</div><span>Construir</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">4</div><span>Programar</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">5</div><span>Probar</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">6</div><span>Mejorar</span></div>
+    <div class="method-arrow"><i class="fas fa-arrow-right"></i></div>
+    <div class="method-step"><div class="method-num">7</div><span>Compartir</span></div>
+  </div>
+  <p class="progressive-note">Virtus acompaña al estudiante durante toda su formación escolar. Las mismas competencias se desarrollan año tras año, incorporando nuevos desafíos acordes a su desarrollo cognitivo. Cada nivel profundiza en:</p>
+  <div class="tag-row">
+    <span class="tag-chip">Ingeniería</span>
+    <span class="tag-chip">Programación</span>
+    <span class="tag-chip">Electrónica</span>
+    <span class="tag-chip">Diseño 3D</span>
+    <span class="tag-chip">Fabricación Digital</span>
+    <span class="tag-chip">Innovación</span>
   </div>
 </section>
 
@@ -486,11 +628,36 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
   </div>
 </section>
 
+<section class="section" id="ecosistema">
+  <div class="section-head">
+    <span class="section-tag">Ecosistema Virtus</span>
+    <h2 class="section-title">Aprendizaje físico y digital</h2>
+    <p class="section-sub">El programa combina experiencias físicas y digitales en un mismo ecosistema de aprendizaje.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-boxes-stacked"></i></div>
+      <h3>Kit Institucional</h3>
+      <p>Cada institución recibe los recursos necesarios para las actividades colaborativas del programa: materiales para trabajo en equipo, robótica educativa y recursos pedagógicos para el docente.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-robot"></i></div>
+      <h3>Kit Personal</h3>
+      <p>Cada estudiante cuenta con su propio kit de robótica, el cual evoluciona durante el año escolar. El robot se construye progresivamente y lo acompaña en su proceso de aprendizaje.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+      <h3>Software educativo</h3>
+      <p>Seleccionamos las herramientas adecuadas para cada etapa del desarrollo infantil. No enseñamos programas: usamos cada herramienta cuando realmente aporta al aprendizaje.</p>
+    </div>
+  </div>
+</section>
+
 <section class="tools-section">
   <div class="section-head">
     <span class="section-tag">Con qué trabajan los estudiantes</span>
     <h2 class="section-title">Herramientas y software profesional</h2>
-    <p class="section-sub">Desde bloques visuales para los más pequeños hasta software de diseño e ingeniería real, el mismo que usan las empresas.</p>
+    <p class="section-sub">Nuestra progresión incluye, entre otras: ScratchJr, Makers Empire, Scratch, Tinkercad, mBlock, Tinkercad Circuits, Arduino IDE, ESP32 y Python — además de software profesional de diseño e ingeniería, el mismo que usan las empresas.</p>
   </div>
   <div class="tools-strip">
     <div class="tools-track">
@@ -519,6 +686,49 @@ footer{padding:3rem 8% 2rem;background:#000;border-top:1px solid var(--line)}
       <div class="tool-item"><img src="images/tools/lego.png" alt="LEGO" loading="lazy"><span>LEGO</span></div>
       <div class="tool-item"><img src="images/tools/creality.png" alt="Creality" loading="lazy"><span>Creality</span></div>
     </div>
+  </div>
+</section>
+
+<section class="section" id="evaluacion">
+  <div class="section-head">
+    <span class="section-tag">Cómo evaluamos</span>
+    <h2 class="section-title">Evaluación basada en evidencias</h2>
+    <p class="section-sub">Los estudiantes demuestran lo aprendido mediante proyectos, retos, prototipos y presentaciones.</p>
+  </div>
+  <div class="tag-row">
+    <span class="tag-chip">Resolución de problemas</span>
+    <span class="tag-chip">Creatividad</span>
+    <span class="tag-chip">Trabajo colaborativo</span>
+    <span class="tag-chip">Comunicación</span>
+    <span class="tag-chip">Aplicación de conocimientos</span>
+    <span class="tag-chip">Mejora continua</span>
+  </div>
+</section>
+
+<section class="section" id="perfil">
+  <div class="section-head">
+    <span class="section-tag">Perfil de egreso</span>
+    <h2 class="section-title">El estudiante Virtus</h2>
+    <p class="section-sub">Al finalizar su formación, cada estudiante será capaz de:</p>
+  </div>
+  <div class="checklist">
+    <div class="check-item"><i class="fas fa-circle-check"></i> Diseñar soluciones para problemas reales</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Construir y programar robots</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Comprender principios de ingeniería y electrónica</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Diseñar modelos tridimensionales</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Trabajar colaborativamente</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Comunicar sus ideas con claridad</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Innovar con creatividad</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Actuar con responsabilidad en el uso de la tecnología</div>
+    <div class="check-item"><i class="fas fa-circle-check"></i> Comprender que la inteligencia artificial debe estar siempre al servicio de la persona</div>
+  </div>
+</section>
+
+<section class="manifesto-quote">
+  <div class="manifesto-quote-inner">
+    <blockquote>"No enseñamos únicamente robótica. Formamos personas capaces de crear tecnología con propósito."</blockquote>
+    <p>Creemos que el verdadero progreso ocurre cuando la innovación está guiada por las virtudes, la ética y el servicio.</p>
+    <p class="closing">Cada proyecto, cada robot y cada línea de código tienen un objetivo mayor: ayudar a construir una sociedad más humana.</p>
   </div>
 </section>
 
