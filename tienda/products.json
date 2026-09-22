@@ -1,1 +1,203 @@
-[{"id":"esc-dual-5a","slug":"esc-cepillado-dual-5a","name":"ESC dual bidireccional 5A","category":"Controladores RC","description":"Controlador de velocidad bidireccional de doble vía para motores cepillados. Compatible con baterías LiPo 2S–3S y adecuado para coches RC 1/35, tanques y coches RC 4WD.","price":null,"active":1,"featured":1,"demo":false,"status":"available","images":[{"kind":"image","url":"./assets/esc-dual-5a.png","alt":"Controlador ESC dual 5A sin fondo"},{"kind":"image","url":"./assets/esc-dual-5a-conexiones.png","alt":"Referencia de conexiones: batería, canales y motores"}],"details":{"voltage":"LiPo 2S–3S","technology":"Motores cepillados","features":["Control bidireccional de doble vía","Tamaño compacto con módulo de condensador incorporado","Capacidad de corriente y disipación de calor","Protección ante pérdida de señal del acelerador o pérdida de control"],"specifications":{"Corriente indicada":"5 A","Batería compatible":"LiPo 2S–3S","Tipo de motor":"Cepillado","Control":"Bidireccional, doble vía","Aplicaciones":"Coches RC 1/35, tanques y coches RC 4WD"}}}]
+[
+  {
+    "id": "esc-dual-5a",
+    "slug": "esc-cepillado-dual-5a",
+    "name": "ESC dual bidireccional 5A",
+    "category": "Controladores RC",
+    "description": "Controlador de velocidad bidireccional de doble vía para motores cepillados. Compatible con baterías LiPo 2S–3S y adecuado para coches RC 1/35, tanques y coches RC 4WD.",
+    "price": 2500,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/esc-dual-5a.png",
+        "alt": "Controlador ESC dual 5A sin fondo"
+      },
+      {
+        "kind": "image",
+        "url": "./assets/esc-dual-5a-conexiones.png",
+        "alt": "Referencia de conexiones: batería, canales y motores"
+      }
+    ],
+    "details": {
+      "voltage": "LiPo 2S–3S",
+      "technology": "Motores cepillados",
+      "features": [
+        "Control bidireccional de doble vía",
+        "Tamaño compacto con módulo de condensador incorporado",
+        "Capacidad de corriente y disipación de calor",
+        "Protección ante pérdida de señal del acelerador o pérdida de control"
+      ],
+      "specifications": {
+        "Corriente indicada": "5 A",
+        "Batería compatible": "LiPo 2S–3S",
+        "Tipo de motor": "Cepillado",
+        "Control": "Bidireccional, doble vía",
+        "Aplicaciones": "Coches RC 1/35, tanques y coches RC 4WD"
+      }
+    }
+  },
+  {
+    "id": "motor-tt-1-eje",
+    "slug": "motor-tt-1-eje",
+    "name": "Motor TT amarillo · 1 eje",
+    "category": "Motores",
+    "description": "Motorreductor TT amarillo con tapa trasera negra y 1 eje blanco. Precio por unidad.",
+    "price": 225,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/motor-tt-1-eje.png",
+        "alt": "Motor TT amarillo · 1 eje"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad",
+        "Modelo": "1 eje",
+        "Tapa del motor": "Negra"
+      },
+      "features": []
+    }
+  },
+  {
+    "id": "motor-tt-2-eje",
+    "slug": "motor-tt-2-eje",
+    "name": "Motor TT amarillo · 2 ejes",
+    "category": "Motores",
+    "description": "Motorreductor TT amarillo con tapa trasera negra y 2 ejes blancos. Precio por unidad.",
+    "price": 225,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/motor-tt-2-eje.png",
+        "alt": "Motor TT amarillo · 2 ejes"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad",
+        "Modelo": "2 ejes",
+        "Tapa del motor": "Negra"
+      },
+      "features": []
+    }
+  },
+  {
+    "id": "servo-sg90",
+    "slug": "servo-sg90",
+    "name": "Servomotor SG90",
+    "category": "Servomotores",
+    "description": "Micro servomotor SG90 para mecanismos y proyectos de robótica.",
+    "price": 390,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/servo-sg90.png",
+        "alt": "Ilustración de Servomotor SG90 sin fondo"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad"
+      },
+      "features": []
+    }
+  },
+  {
+    "id": "arduino-uno-r3",
+    "slug": "arduino-uno-r3",
+    "name": "Arduino Uno R3",
+    "category": "Placas de desarrollo",
+    "description": "Placa Arduino Uno R3 para aprender programación y construir proyectos de electrónica.",
+    "price": 1700,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/arduino-uno-r3.png",
+        "alt": "Ilustración de Arduino Uno R3 sin fondo"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad"
+      },
+      "features": []
+    }
+  },
+  {
+    "id": "arduino-nano",
+    "slug": "arduino-nano",
+    "name": "Arduino Nano",
+    "category": "Placas de desarrollo",
+    "description": "Placa Arduino Nano de formato compacto para proyectos de electrónica.",
+    "price": 1500,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/arduino-nano.png",
+        "alt": "Ilustración de Arduino Nano sin fondo"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad"
+      },
+      "features": []
+    }
+  },
+  {
+    "id": "shield-nano",
+    "slug": "shield-nano",
+    "name": "Shield para Arduino Nano",
+    "category": "Shields y expansiones",
+    "description": "Placa de expansión para Arduino Nano. Consulta la versión y conexiones disponibles antes de comprar.",
+    "price": 650,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "illustrative": true,
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/shield-nano.png",
+        "alt": "Ilustración de Shield para Arduino Nano sin fondo"
+      }
+    ],
+    "details": {
+      "specifications": {
+        "Venta": "Por unidad"
+      },
+      "features": []
+    }
+  }
+]
