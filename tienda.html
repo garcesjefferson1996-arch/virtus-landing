@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda VIRTUS Electrónica — Componentes, Herramientas y Robótica</title>
+<meta name="description" content="Tienda VIRTUS Electrónica: microcontroladores, sensores, motores, herramientas, energía e impresión 3D. Arma tu pedido y confírmalo por WhatsApp, sin registro.">
+<link rel="canonical" href="https://virtusrobotica.com/tienda.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="images/virtus-logo.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.hidden{display:none!important}
+:root{
+  --cy:#22e0ff;--cy2:#7af5ff;--cy-dim:rgba(34,224,255,.14);
+  --bg:#08090b;--bg2:#111318;--bg3:#181b22;
+  --fade:rgba(255,255,255,.55);--faint:rgba(255,255,255,.32);
+  --line:rgba(255,255,255,.09);
+  --glass:rgba(255,255,255,.035);--glass-border:rgba(255,255,255,.09);--panel:rgba(17,19,24,.5);
+  --wa:#25D366;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;color:#fff;overflow-x:hidden;min-height:100vh;
+  background:linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.32)),url('images/bg-texture.jpg') center center / cover no-repeat fixed;
+  background-color:var(--bg);
+}
+a{color:inherit}
+button{font-family:inherit}
+
+/* ---------- HEADER (estilo tienda: logo + buscador + carrito) ---------- */
+.store-header{
+  position:sticky;top:0;z-index:200;
+  background:var(--panel);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--glass-border);
+}
+.store-header-top{
+  display:flex;align-items:center;gap:1.2rem;padding:1rem 5%;max-width:1400px;margin:0 auto;
+}
+.store-logo{display:flex;align-items:center;gap:.6rem;flex-shrink:0;text-decoration:none}
+.store-logo img{height:30px;width:auto}
+.store-logo .badge-tienda{
+  font-family:'Chakra Petch',sans-serif;font-size:.62rem;font-weight:700;color:var(--cy);
+  border:1px solid rgba(34,224,255,.4);border-radius:5px;padding:.15rem .4rem;letter-spacing:1px;
+}
+.search-wrap{flex:1;position:relative;max-width:640px}
+.search-wrap input{
+  width:100%;padding:.75rem 1.1rem .75rem 2.6rem;border-radius:10px;border:1px solid var(--glass-border);
+  background:var(--glass);color:#fff;font-size:.88rem;outline:none;transition:border-color .2s;
+}
+.search-wrap input:focus{border-color:var(--cy)}
+.search-wrap input::placeholder{color:var(--faint)}
+.search-wrap i{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--faint);font-size:.85rem}
+.header-actions{display:flex;align-items:center;gap:.9rem;flex-shrink:0}
+.icon-btn{
+  position:relative;width:42px;height:42px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);
+  color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s;
+}
+.icon-btn:hover{border-color:rgba(34,224,255,.4)}
+.cart-count{
+  position:absolute;top:-6px;right:-6px;background:var(--cy);color:#000;font-size:.65rem;font-weight:800;
+  min-width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0 3px;
+}
+.nav-cta{
+  padding:.6rem 1.2rem;border-radius:50px;border:1px solid var(--cy);color:var(--cy)!important;
+  font-weight:700;font-size:.75rem;text-decoration:none;letter-spacing:.5px;white-space:nowrap;
+  transition:background .2s,color .2s;
+}
+.nav-cta:hover{background:var(--cy);color:#000!important}
+
+.dept-bar{border-top:1px solid var(--glass-border);overflow-x:auto;scrollbar-width:none}
+.dept-bar::-webkit-scrollbar{display:none}
+.dept-track{display:flex;gap:.5rem;padding:.7rem 5%;max-width:1400px;margin:0 auto;width:max-content}
+.dept-chip{
+  padding:.5rem 1.1rem;border-radius:50px;border:1px solid var(--glass-border);
+  background:var(--glass);color:var(--fade);font-size:.78rem;font-weight:600;cursor:pointer;
+  white-space:nowrap;transition:all .2s;display:flex;align-items:center;gap:.4rem;
+}
+.dept-chip i{font-size:.75rem}
+.dept-chip:hover{border-color:rgba(34,224,255,.4);color:#fff}
+.dept-chip.active{background:var(--cy);border-color:var(--cy);color:#000}
+
+@media(max-width:760px){
+  .store-header-top{flex-wrap:wrap}
+  .search-wrap{order:3;flex-basis:100%;max-width:none}
+}
+
+/* ---------- BANNER ---------- */
+.store-banner{
+  position:relative;padding:3.2rem 5% 2.6rem;text-align:center;
+  background:radial-gradient(ellipse 700px 320px at 50% 0%, rgba(34,224,255,.14), transparent 65%);
+}
+.store-banner .tag{
+  display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:700;color:var(--fade);
+  letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.1rem;
+  background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);border-radius:50px;padding:.45rem 1rem;
+}
+.store-banner .tag i{color:var(--cy)}
+.store-banner h1{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.2;margin-bottom:.8rem}
+.store-banner h1 span{color:var(--cy)}
+.store-banner p{color:var(--fade);font-size:.95rem;line-height:1.7;max-width:600px;margin:0 auto}
+
+/* ---------- GRID ---------- */
+.store-wrap{max-width:1400px;margin:0 auto;padding:0 5% 5rem}
+.results-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.6rem;padding:1.6rem 0 1.2rem;color:var(--fade);font-size:.82rem}
+.results-bar b{color:#fff}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.3rem}
+.empty-results{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--faint)}
+.empty-results i{font-size:2rem;display:block;margin-bottom:.75rem}
+
+.product-card{
+  background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);border-radius:16px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .25s,border-color .25s;
+}
+.product-card:hover{transform:translateY(-5px);border-color:rgba(34,224,255,.4);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.product-img{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(34,224,255,.12),rgba(255,255,255,.02));position:relative}
+.product-img img{width:100%;height:100%;object-fit:cover}
+.product-img i{font-size:2.3rem;color:var(--cy)}
+.product-badge{position:absolute;top:.6rem;left:.6rem;background:var(--cy);color:#000;font-size:.62rem;font-weight:800;padding:.2rem .5rem;border-radius:5px;letter-spacing:.5px;text-transform:uppercase}
+.product-body{padding:1.1rem;display:flex;flex-direction:column;flex:1}
+.product-cat{font-size:.65rem;font-weight:700;color:var(--cy);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:.4rem}
+.product-name{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:.4rem;line-height:1.3}
+.product-desc{color:var(--fade);font-size:.8rem;line-height:1.55;flex:1;margin-bottom:.8rem}
+.product-price{font-weight:800;color:#fff;font-size:1.05rem;margin-bottom:.9rem;font-family:'Chakra Petch',sans-serif}
+.product-price.consult{color:var(--faint);font-weight:600;font-size:.78rem;font-family:'Inter',sans-serif}
+.product-actions{display:flex;gap:.5rem}
+.qty-stepper{display:flex;align-items:center;border:1px solid var(--glass-border);border-radius:10px;overflow:hidden}
+.qty-stepper button{width:30px;height:38px;background:var(--glass);color:#fff;border:none;cursor:pointer;font-size:.9rem}
+.qty-stepper button:hover{background:rgba(255,255,255,.08)}
+.qty-stepper span{width:26px;text-align:center;font-size:.85rem;font-weight:700}
+.btn-add{
+  flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:0 .8rem;border-radius:10px;
+  background:var(--cy);color:#000;font-weight:700;font-size:.78rem;border:none;cursor:pointer;transition:filter .2s;
+}
+.btn-add:hover{filter:brightness(1.08)}
+.btn-add.added{background:var(--wa);color:#04140a}
+
+.store-note{max-width:700px;margin:0 auto;padding:0 0 1rem;text-align:center;color:var(--faint);font-size:.83rem;line-height:1.7}
+
+/* ---------- CARRITO (drawer) ---------- */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:300;opacity:0;pointer-events:none;transition:opacity .25s}
+.cart-overlay.open{opacity:1;pointer-events:auto}
+.cart-drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(400px,92vw);z-index:301;
+  background:#111318;border-left:1px solid var(--glass-border);
+  display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s ease;
+}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{padding:1.3rem 1.4rem;border-bottom:1px solid var(--glass-border);display:flex;align-items:center;justify-content:space-between}
+.cart-head h3{font-family:'Chakra Petch',sans-serif;font-size:1rem;display:flex;align-items:center;gap:.5rem}
+.cart-head h3 i{color:var(--cy)}
+.cart-close{background:none;border:none;color:var(--fade);font-size:1.1rem;cursor:pointer}
+.cart-items{flex:1;overflow-y:auto;padding:1rem 1.4rem}
+.cart-empty{text-align:center;color:var(--faint);padding:3rem 1rem}
+.cart-empty i{font-size:2rem;display:block;margin-bottom:.75rem}
+.cart-item{display:flex;gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--glass-border)}
+.cart-item-img{width:52px;height:52px;border-radius:10px;background:var(--glass);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cart-item-img img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.cart-item-img i{color:var(--cy)}
+.cart-item-info{flex:1;min-width:0}
+.cart-item-name{font-size:.85rem;font-weight:700;margin-bottom:.3rem}
+.cart-item-price{font-size:.75rem;color:var(--faint);margin-bottom:.4rem}
+.cart-item-row{display:flex;align-items:center;justify-content:space-between}
+.cart-item-remove{background:none;border:none;color:var(--faint);cursor:pointer;font-size:.8rem}
+.cart-item-remove:hover{color:#EF4444}
+.cart-foot{padding:1.2rem 1.4rem;border-top:1px solid var(--glass-border)}
+.cart-foot-count{font-size:.82rem;color:var(--fade);margin-bottom:.9rem;display:flex;justify-content:space-between}
+.btn-checkout{
+  width:100%;display:flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem;border-radius:12px;
+  background:var(--wa);color:#04140a;font-weight:800;font-size:.88rem;text-decoration:none;border:none;cursor:pointer;
+}
+.btn-checkout[disabled]{opacity:.4;pointer-events:none}
+.btn-clear{width:100%;text-align:center;margin-top:.7rem;background:none;border:none;color:var(--faint);font-size:.78rem;cursor:pointer}
+.btn-clear:hover{color:#EF4444}
+
+footer{padding:2.5rem 5% 2rem;background:var(--panel);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--glass-border)}
+.footer-grid{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;margin-bottom:2rem}
+.footer-brand{display:flex;align-items:center;gap:.7rem}
+.footer-logo{height:26px;width:auto;display:block}
+.footer-social{display:flex;gap:.8rem}
+.footer-social a{width:36px;height:36px;border-radius:50%;border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--fade);transition:all .2s}
+.footer-social a:hover{background:var(--cy);border-color:var(--cy);color:#000}
+.footer-bottom{max-width:1400px;margin:0 auto;padding-top:1.6rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:var(--faint)}
+.footer-bottom a{text-decoration:none;color:var(--fade)}
+.footer-bottom a:hover{color:var(--cy)}
+</style>
+</head>
+<body>
+
+<header class="store-header">
+  <div class="store-header-top">
+    <a class="store-logo" href="index.html">
+      <img src="images/virtus-wordmark.png" alt="VIRTUS">
+      <span class="badge-tienda">TIENDA</span>
+    </a>
+    <div class="search-wrap">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Buscar productos: Arduino, motor, sensor, batería...">
+    </div>
+    <div class="header-actions">
+      <a class="icon-btn" href="index.html" title="Volver a VIRTUS STEAM"><i class="fas fa-house"></i></a>
+      <button class="icon-btn" id="cartBtn" title="Ver pedido">
+        <i class="fas fa-cart-shopping"></i>
+        <span class="cart-count hidden" id="cartCount">0</span>
+      </button>
+      <a class="nav-cta" href="https://plataforma.virtusrobotica.com/login.html">Ingresar</a>
+    </div>
+  </div>
+  <nav class="dept-bar">
+    <div class="dept-track" id="deptTrack"></div>
+  </nav>
+</header>
+
+<section class="store-banner">
+  <span class="tag"><i class="fas fa-bolt"></i>&nbsp; VIRTUS Electrónica</span>
+  <h1>Todo para tus proyectos de <span>electrónica y robótica</span></h1>
+  <p>Microcontroladores, sensores, motores, herramientas, energía, cables e impresión 3D. Arma tu pedido y lo confirmamos contigo por WhatsApp — sin registro ni pagos en línea.</p>
+</section>
+
+<div class="store-wrap">
+  <div class="results-bar">
+    <span id="resultsCount"></span>
+    <span><i class="fab fa-whatsapp" style="color:var(--wa)"></i> Confirmamos precio, stock y entrega por WhatsApp</span>
+  </div>
+  <div class="store-grid" id="storeGrid"></div>
+  <p class="store-note">Catálogo en crecimiento — vamos subiendo más productos poco a poco. Los precios pueden variar según disponibilidad y cantidad; el pedido se confirma siempre por WhatsApp antes de despachar.</p>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><img class="footer-logo" src="images/virtus-wordmark.png" alt="VIRTUS"></div>
+    <div class="footer-social">
+      <a href="https://wa.me/593993340103" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/RoboWorksAmbato" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/RoboWorksAmbato" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 VIRTUS STEAM · Tienda VIRTUS Electrónica · Ambato, Ecuador</span>
+    <a href="index.html">← Volver a VIRTUS STEAM</a>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3><i class="fas fa-cart-shopping"></i> Tu pedido</h3>
+    <button class="cart-close" id="cartCloseBtn"><i class="fas fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-foot-count"><span>Productos en el pedido</span><b id="cartFootCount">0</b></div>
+    <button class="btn-checkout" id="checkoutBtn" disabled>
+      <i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp
+    </button>
+    <button class="btn-clear" id="clearCartBtn">Vaciar pedido</button>
+  </div>
+</aside>
+
+<script>
+// ─────────────────────────────────────────────────────────────
+// Catálogo de la tienda — sin base de datos, sin login, sin pagos.
+// Para agregar/editar productos: edita este arreglo y ya.
+//   category: la clave debe existir en CATEGORIES de abajo (o agrega una nueva ahí también)
+//   image: URL de foto (opcional; si no hay, se muestra un ícono)
+//   price: texto libre (ej. "$3.50", "Desde $8") o '' para mostrar "Consultar precio"
+//   badge: (opcional) texto corto tipo "Nuevo" / "Más vendido"
+// ─────────────────────────────────────────────────────────────
+const WHATSAPP_NUMBER = '593993340103';
+
+const CATEGORIES = [
+  { id: 'todos', label: 'Todos', icon: 'fa-border-all' },
+  { id: 'microcontroladores', label: 'Microcontroladores', icon: 'fa-microchip' },
+  { id: 'sensores', label: 'Sensores', icon: 'fa-satellite-dish' },
+  { id: 'motores', label: 'Motores y control', icon: 'fa-gear' },
+  { id: 'energia', label: 'Energía y baterías', icon: 'fa-car-battery' },
+  { id: 'cables', label: 'Cables y conectores', icon: 'fa-plug' },
+  { id: 'herramientas', label: 'Herramientas', icon: 'fa-screwdriver-wrench' },
+  { id: 'impresion3d', label: 'Impresión 3D', icon: 'fa-cube' },
+  { id: 'robotica', label: 'Robótica de competencia', icon: 'fa-robot' }
+];
+
+const STORE_PRODUCTS = [
+  { id: 'arduino-uno', name: 'Arduino Uno R3', category: 'microcontroladores', icon: 'fa-microchip', image: '', price: '', badge: 'Popular', description: 'Placa de desarrollo Arduino Uno R3, ideal para empezar en electrónica y robótica.' },
+  { id: 'esp32', name: 'ESP32 DevKit', category: 'microcontroladores', icon: 'fa-microchip', image: '', price: '', description: 'Microcontrolador con WiFi y Bluetooth integrado, para proyectos conectados.' },
+  { id: 'raspberry-pico', name: 'Raspberry Pi Pico', category: 'microcontroladores', icon: 'fa-microchip', image: '', price: '', description: 'Microcontrolador de bajo costo y alto rendimiento, programable en MicroPython.' },
+  { id: 'sensor-ultrasonico', name: 'Sensor ultrasónico HC-SR04', category: 'sensores', icon: 'fa-satellite-dish', image: '', price: '', description: 'Mide distancia por ultrasonido, ideal para robots evasores de obstáculos.' },
+  { id: 'sensor-ir', name: 'Sensor infrarrojo de línea', category: 'sensores', icon: 'fa-satellite-dish', image: '', price: '', description: 'Sensor IR para robots seguidores de línea.' },
+  { id: 'motor-tt-amarillo', name: 'Motor amarillo TT', category: 'motores', icon: 'fa-gear', image: '', price: '', badge: 'Popular', description: 'Motor DC amarillo tipo TT, el reglamentario para la categoría colegial de Robot Soccer.' },
+  { id: 'servomotor-sg90', name: 'Servomotor SG90', category: 'motores', icon: 'fa-gear', image: '', price: '', description: 'Micro servomotor de 180°, ideal para brazos robóticos y mecanismos pequeños.' },
+  { id: 'puente-h-virtus', name: 'Puente H Virtus Model 1', category: 'motores', icon: 'fa-microchip', image: '', price: '', description: 'Controlador de motores (puente H) diseñado por Virtus para los robots de competencia.' },
+  { id: 'bateria-lipo', name: 'Batería LiPo (hasta 3S)', category: 'energia', icon: 'fa-car-battery', image: '', price: '', description: 'Baterías LiPo de hasta 3 celdas para tus robots de competencia.' },
+  { id: 'bateria-litio', name: 'Batería Ion Litio 18650', category: 'energia', icon: 'fa-car-battery', image: '', price: '', description: 'Celdas recargables de ion litio para proyectos de electrónica.' },
+  { id: 'protoboard', name: 'Protoboard 830 puntos', category: 'cables', icon: 'fa-plug', image: '', price: '', description: 'Tablero de pruebas para armar circuitos sin soldar.' },
+  { id: 'jumpers', name: 'Cables jumper (M-M, M-H, H-H)', category: 'cables', icon: 'fa-plug', image: '', price: '', description: 'Set de cables jumper para conexiones rápidas en protoboard y microcontroladores.' },
+  { id: 'cautin', name: 'Cautín + estaño', category: 'herramientas', icon: 'fa-screwdriver-wrench', image: '', price: '', description: 'Kit básico de soldadura para armar y reparar circuitos.' },
+  { id: 'multimetro', name: 'Multímetro digital', category: 'herramientas', icon: 'fa-screwdriver-wrench', image: '', price: '', description: 'Mide voltaje, corriente y continuidad — esencial para cualquier proyecto electrónico.' },
+  { id: 'impresion-3d-pieza', name: 'Impresión 3D de piezas', category: 'impresion3d', icon: 'fa-cube', image: '', price: '', description: 'Servicio de impresión 3D: envíanos tu archivo o pide las piezas de un robot Virtus.' },
+  { id: 'filamento-pla', name: 'Filamento PLA 1kg', category: 'impresion3d', icon: 'fa-cube', image: '', price: '', description: 'Rollo de filamento PLA de 1kg en varios colores para impresión 3D.' },
+  { id: 'llanta-robot', name: 'Llanta y goma para robot', category: 'robotica', icon: 'fa-circle-dot', image: '', price: '', description: 'Llantas y gomas de distintos diámetros para robots móviles y de competencia.' },
+  { id: 'receptor-rc', name: 'Receptor de radiocontrol', category: 'robotica', icon: 'fa-satellite-dish', image: '', price: '', description: 'Receptor para control remoto de robots de competencia (Soccer, Mini Sumo, etc.).' }
+];
+
+// ─────────────────────────────────────────────────────────────
+
+let activeCategory = 'todos';
+let searchTerm = '';
+let cart = {}; // { productId: qty }
+
+function loadCart(){
+  try {
+    const saved = localStorage.getItem('virtus_store_cart');
+    if (saved) cart = JSON.parse(saved);
+  } catch (e) { cart = {}; }
+}
+function saveCart(){
+  try { localStorage.setItem('virtus_store_cart', JSON.stringify(cart)); } catch (e) {}
+}
+
+function esc(s){ const d = document.createElement('div'); d.textContent = s ?? ''; return d.innerHTML; }
+function escAttr(s){ return (s || '').replace(/"/g, '&quot;'); }
+
+function renderDepts(){
+  const track = document.getElementById('deptTrack');
+  track.innerHTML = CATEGORIES.map(c => `
+    <button class="dept-chip ${c.id === activeCategory ? 'active' : ''}" data-cat="${escAttr(c.id)}">
+      <i class="fas ${esc(c.icon)}"></i> ${esc(c.label)}
+    </button>
+  `).join('');
+  track.querySelectorAll('.dept-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.dataset.cat;
+      renderDepts();
+      renderGrid();
+    });
+  });
+}
+
+function getFilteredProducts(){
+  return STORE_PRODUCTS.filter(p => {
+    const matchesCat = activeCategory === 'todos' || p.category === activeCategory;
+    const term = searchTerm.trim().toLowerCase();
+    const matchesSearch = !term || p.name.toLowerCase().includes(term) || (p.description || '').toLowerCase().includes(term);
+    return matchesCat && matchesSearch;
+  });
+}
+
+function categoryLabel(catId){
+  const c = CATEGORIES.find(c => c.id === catId);
+  return c ? c.label : catId;
+}
+
+function renderGrid(){
+  const grid = document.getElementById('storeGrid');
+  const items = getFilteredProducts();
+  document.getElementById('resultsCount').textContent = `${items.length} producto${items.length === 1 ? '' : 's'}`;
+
+  if (items.length === 0) {
+    grid.innerHTML = `<div class="empty-results"><i class="fas fa-magnifying-glass"></i>No encontramos productos con esa búsqueda.</div>`;
+    return;
+  }
+
+  grid.innerHTML = items.map(p => {
+    const qty = cart[p.id] || 0;
+    return `
+    <div class="product-card">
+      <div class="product-img">
+        ${p.badge ? `<span class="product-badge">${esc(p.badge)}</span>` : ''}
+        ${p.image ? `<img src="${escAttr(p.image)}" alt="">` : `<i class="fas ${esc(p.icon || 'fa-bolt')}"></i>`}
+      </div>
+      <div class="product-body">
+        <div class="product-cat">${esc(categoryLabel(p.category))}</div>
+        <div class="product-name">${esc(p.name)}</div>
+        <div class="product-desc">${esc(p.description || '')}</div>
+        <div class="product-price ${p.price ? '' : 'consult'}">${p.price ? esc(p.price) : 'Consultar precio'}</div>
+        <div class="product-actions">
+          ${qty > 0 ? `
+            <div class="qty-stepper">
+              <button data-action="dec" data-id="${escAttr(p.id)}">−</button>
+              <span>${qty}</span>
+              <button data-action="inc" data-id="${escAttr(p.id)}">+</button>
+            </div>
+          ` : `
+            <button class="btn-add" data-action="add" data-id="${escAttr(p.id)}"><i class="fas fa-cart-plus"></i> Agregar</button>
+          `}
+        </div>
+      </div>
+    </div>
+  `;
+  }).join('');
+
+  grid.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      if (action === 'add' || action === 'inc') cart[id] = (cart[id] || 0) + 1;
+      if (action === 'dec') {
+        cart[id] = (cart[id] || 0) - 1;
+        if (cart[id] <= 0) delete cart[id];
+      }
+      saveCart();
+      renderGrid();
+      renderCart();
+    });
+  });
+}
+
+function cartTotalCount(){
+  return Object.values(cart).reduce((sum, q) => sum + q, 0);
+}
+
+function renderCart(){
+  const count = cartTotalCount();
+  const countEl = document.getElementById('cartCount');
+  countEl.textContent = count;
+  countEl.classList.toggle('hidden', count === 0);
+  document.getElementById('cartFootCount').textContent = count;
+  document.getElementById('checkoutBtn').disabled = count === 0;
+
+  const itemsEl = document.getElementById('cartItems');
+  const ids = Object.keys(cart);
+  if (ids.length === 0) {
+    itemsEl.innerHTML = `<div class="cart-empty"><i class="fas fa-cart-shopping"></i>Todavía no has agregado productos.</div>`;
+    return;
+  }
+  itemsEl.innerHTML = ids.map(id => {
+    const p = STORE_PRODUCTS.find(p => p.id === id);
+    if (!p) return '';
+    const qty = cart[id];
+    return `
+      <div class="cart-item">
+        <div class="cart-item-img">${p.image ? `<img src="${escAttr(p.image)}" alt="">` : `<i class="fas ${esc(p.icon || 'fa-bolt')}"></i>`}</div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">${esc(p.name)}</div>
+          <div class="cart-item-price">${p.price ? esc(p.price) : 'Consultar precio'}</div>
+          <div class="cart-item-row">
+            <div class="qty-stepper">
+              <button data-action="dec" data-id="${escAttr(id)}">−</button>
+              <span>${qty}</span>
+              <button data-action="inc" data-id="${escAttr(id)}">+</button>
+            </div>
+            <button class="cart-item-remove" data-action="remove" data-id="${escAttr(id)}"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  itemsEl.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      if (action === 'inc') cart[id] = (cart[id] || 0) + 1;
+      if (action === 'dec') { cart[id] = (cart[id] || 0) - 1; if (cart[id] <= 0) delete cart[id]; }
+      if (action === 'remove') delete cart[id];
+      saveCart();
+      renderCart();
+      renderGrid();
+    });
+  });
+}
+
+function openCart(){ document.getElementById('cartDrawer').classList.add('open'); document.getElementById('cartOverlay').classList.add('open'); }
+function closeCart(){ document.getElementById('cartDrawer').classList.remove('open'); document.getElementById('cartOverlay').classList.remove('open'); }
+
+function buildWhatsappMessage(){
+  const lines = Object.keys(cart).map(id => {
+    const p = STORE_PRODUCTS.find(p => p.id === id);
+    return p ? `- ${p.name} x${cart[id]}` : null;
+  }).filter(Boolean);
+  const msg = `Hola, quiero pedir estos productos de VIRTUS Electrónica:\n${lines.join('\n')}\n\n¿Me confirman precio, disponibilidad y cómo retiro o recibo el pedido?`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+}
+
+document.getElementById('cartBtn').addEventListener('click', openCart);
+document.getElementById('cartCloseBtn').addEventListener('click', closeCart);
+document.getElementById('cartOverlay').addEventListener('click', closeCart);
+document.getElementById('clearCartBtn').addEventListener('click', () => {
+  if (cartTotalCount() === 0) return;
+  if (!confirm('¿Vaciar todo el pedido?')) return;
+  cart = {};
+  saveCart();
+  renderCart();
+  renderGrid();
+});
+document.getElementById('checkoutBtn').addEventListener('click', () => {
+  if (cartTotalCount() === 0) return;
+  window.open(buildWhatsappMessage(), '_blank');
+});
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  searchTerm = e.target.value;
+  renderGrid();
+});
+
+loadCart();
+renderDepts();
+renderGrid();
+renderCart();
+</script>
+</body>
+</html>
