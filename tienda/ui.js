@@ -19,7 +19,7 @@ export const date = (s) =>
     new Date(s.replace(" ", "T") + "Z"),
   );
 export const icons = {
-  arrow: "M7 17 17 7M7 7h10v10",
+  arrow: "M4 12h16m-6-6 6 6-6 6",
   right: "M4 12h16m-6-6 6 6-6 6",
   search: "m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0",
   bag: "M5 7h14l1 14H4L5 7Zm3 0V5a4 4 0 0 1 8 0v2",
