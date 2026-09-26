@@ -206,7 +206,7 @@
     "name": "Creality SPARKX i7 Color Combo",
     "category": "Impresoras 3D",
     "description": "Dale color a tus ideas: impresora 3D con sistema CFS Lite para crear figuras, prototipos y accesorios personalizados en hasta cuatro colores.",
-    "price": 79500,
+    "price": 79550,
     "active": 1,
     "featured": 1,
     "demo": false,
@@ -261,7 +261,7 @@
     "name": "Filamento PLA · SKP3D",
     "category": "Filamentos SKP3D",
     "description": "Color y detalle para tus ideas. PLA para figuras, maquetas y prototipos visuales, distribuido por VIRTUS Electrónica.",
-    "price": 2400,
+    "price": 2670,
     "active": 1,
     "featured": 0,
     "demo": false,
@@ -378,8 +378,8 @@
     "slug": "creality-k1c",
     "name": "Creality K1C",
     "category": "Impresoras 3D",
-    "description": "Impresora cerrada para prototipos y piezas funcionales, con nivelación automática y cámara para supervisar tus proyectos. Consulta precio y disponibilidad con VIRTUS.",
-    "price": null,
+    "description": "Impresora cerrada para prototipos y piezas funcionales, con nivelación automática y cámara para supervisar tus proyectos.",
+    "price": 96600,
     "active": 1,
     "featured": 0,
     "demo": false,
@@ -417,6 +417,942 @@
           "title": "Especificaciones · Creality",
           "url": "https://www.creality.com/products/k1c-carbon-3d-printer"
         }
+      ]
+    }
+  },
+  {
+    "id": "filamento-skp3d-abs",
+    "slug": "filamento-skp3d-abs",
+    "name": "Filamento ABS · SKP3D",
+    "category": "Filamentos SKP3D",
+    "description": "Filamento de ingeniería más resistente al calor que el PLA, ideal para piezas funcionales. Requiere cama caliente e impresora con recinto cerrado o ambiente sin corrientes de aire.",
+    "price": 2670,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "colors": [
+      { "name": "Blanco", "hex": "#ffffff" },
+      { "name": "Gris", "hex": "#8a8d90" },
+      { "name": "Negro", "hex": "#242424" },
+      { "name": "Rojo", "hex": "#ca292f" }
+    ],
+    "details": {
+      "specifications": {
+        "Material": "ABS",
+        "Venta": "Bobina de 1 kg",
+        "Temperatura de impresión orientativa": "230–260 °C",
+        "Cama recomendada": "90–110 °C",
+        "Diámetro": "1,75 mm"
+      },
+      "features": [
+        "Mayor resistencia mecánica y al calor que el PLA.",
+        "Requiere cama caliente y, de preferencia, impresora cerrada (tiende a deformarse con corrientes de aire).",
+        "Ideal para piezas funcionales, engranajes y soportes que trabajan bajo calor."
+      ],
+      "note": "El warping es más frecuente que con PLA; recomendamos impresora con recinto cerrado. Confirmamos color exacto disponible al pedir.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/abs/" }
+      ]
+    }
+  },
+  {
+    "id": "filamento-skp3d-pla-multicolor",
+    "slug": "filamento-skp3d-pla-multicolor",
+    "name": "Filamento PLA Multicolor · SKP3D",
+    "category": "Filamentos SKP3D",
+    "description": "PLA con transición de color a lo largo de la misma bobina: cada pieza sale con degradados únicos, sin cambiar de filamento.",
+    "price": 3120,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "specifications": {
+        "Material": "PLA multicolor (degradado)",
+        "Venta": "Bobina de 1 kg",
+        "Temperatura de impresión orientativa": "190–220 °C",
+        "Diámetro": "1,75 mm"
+      },
+      "features": [
+        "Cambia de color de forma gradual mientras imprime, sin intervención manual.",
+        "Mismas propiedades de impresión que el PLA estándar.",
+        "Ideal para piezas decorativas, figuras y regalos personalizados."
+      ],
+      "note": "El patrón exacto de colores depende del lote de la bobina.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-multicolor/" }
+      ]
+    }
+  },
+  {
+    "id": "filamento-skp3d-pla-tricolor",
+    "slug": "filamento-skp3d-pla-tricolor",
+    "name": "Filamento PLA Tricolor · SKP3D",
+    "category": "Filamentos SKP3D",
+    "description": "PLA con tres tonos definidos en una sola bobina, para piezas con cambios de color más marcados que el degradado multicolor.",
+    "price": 2600,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "specifications": {
+        "Material": "PLA tricolor",
+        "Venta": "Bobina de 1 kg",
+        "Temperatura de impresión orientativa": "190–220 °C",
+        "Diámetro": "1,75 mm",
+        "Precio": "Varía según combinación de colores ($26,00–$31,20)"
+      },
+      "features": [
+        "Tres colores definidos dentro de la misma bobina.",
+        "Mismas propiedades de impresión que el PLA estándar.",
+        "Varias combinaciones de colores disponibles; confirmamos existencia al pedir."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-tricolor/" }
+      ]
+    }
+  },
+  {
+    "id": "filamento-skp3d-pla-translucido",
+    "slug": "filamento-skp3d-pla-translucido",
+    "name": "Filamento PLA Translúcido · SKP3D",
+    "category": "Filamentos SKP3D",
+    "description": "PLA semitransparente, ideal para piezas que buscan efecto de vidrio esmerilado o para proyectos con luces LED internas.",
+    "price": 2670,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "specifications": {
+        "Material": "PLA translúcido",
+        "Venta": "Bobina de 1 kg",
+        "Temperatura de impresión orientativa": "190–220 °C",
+        "Diámetro": "1,75 mm"
+      },
+      "features": [
+        "Efecto semitransparente, ideal para piezas con iluminación interior (LED).",
+        "Mismas propiedades de impresión que el PLA estándar.",
+        "El nivel de transparencia depende del espesor de la pared impresa."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-tranlucido/" }
+      ]
+    }
+  },
+  {
+    "id": "filamento-skp3d-pc",
+    "slug": "filamento-skp3d-pc",
+    "name": "Filamento PC (Policarbonato) · SKP3D",
+    "category": "Filamentos SKP3D",
+    "description": "Filamento de ingeniería de alta resistencia mecánica y térmica, para piezas funcionales que trabajan bajo esfuerzo o temperatura.",
+    "price": 4450,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "specifications": {
+        "Material": "Policarbonato (PC)",
+        "Venta": "Bobina de 1 kg",
+        "Temperatura de impresión orientativa": "260–300 °C",
+        "Cama recomendada": "100–120 °C",
+        "Diámetro": "1,75 mm"
+      },
+      "features": [
+        "Alta resistencia al impacto y a altas temperaturas, superior a ABS y PETG.",
+        "Requiere impresora con boquilla y cama de alta temperatura, de preferencia con recinto cerrado.",
+        "Recomendado para piezas mecánicas que trabajan bajo esfuerzo o calor."
+      ],
+      "note": "Material técnico: recomendado para usuarios con experiencia previa en impresión 3D.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pc/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-anycubic-photon-m3-max",
+    "slug": "anycubic-photon-m3-max-7k",
+    "name": "Anycubic Photon M3 Max 7K",
+    "category": "Impresoras 3D",
+    "description": "Impresora de resina (MSLA) de gran formato, con pantalla monocromática 7K para piezas detalladas de mayor tamaño: miniaturas, joyería y prototipos.",
+    "price": 113570,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Resina (MSLA)",
+      "specifications": {
+        "Marca": "Anycubic",
+        "Tecnología": "Resina, pantalla mono 7K",
+        "Formato": "Gran formato (respecto a la línea Photon)"
+      },
+      "features": [
+        "Alta resolución de detalle gracias a la pantalla monocromática 7K.",
+        "Formato grande dentro de las impresoras de resina de escritorio.",
+        "Ideal para miniaturas, joyería y piezas de alto detalle."
+      ],
+      "note": "Confirmamos volumen de impresión exacto y accesorios incluidos al cotizar.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/photon-m3-max/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-anycubic-photon-mono-m7-pro",
+    "slug": "anycubic-photon-mono-m7-pro",
+    "name": "Anycubic Photon Mono M7 Pro",
+    "category": "Impresoras 3D",
+    "description": "Impresora de resina de la serie M7 de Anycubic, con pantalla monocromática de alta resolución para piezas detalladas.",
+    "price": 124270,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Resina (MSLA)",
+      "specifications": {
+        "Marca": "Anycubic",
+        "Tecnología": "Resina, pantalla mono de alta resolución"
+      },
+      "features": [
+        "Pantalla monocromática de alta resolución para detalle fino.",
+        "Pensada para miniaturas, figuras y piezas de precisión.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/anycubic-photon-mono-m7-pro/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-anycubic-photon-mono-m7-max",
+    "slug": "anycubic-photon-mono-m7-max",
+    "name": "Anycubic Photon Mono M7 Max",
+    "category": "Impresoras 3D",
+    "description": "Versión de mayor formato de la serie M7: impresora de resina para piezas grandes con alta resolución de detalle.",
+    "price": 147730,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Resina (MSLA)",
+      "specifications": {
+        "Marca": "Anycubic",
+        "Tecnología": "Resina, pantalla mono de alta resolución",
+        "Formato": "Mayor volumen de impresión que el M7 Pro"
+      },
+      "features": [
+        "Mayor volumen de impresión que el M7 Pro, misma línea de resolución.",
+        "Ideal para lotes de miniaturas o piezas de mayor tamaño.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/anycubic-photon-mono-m7-max/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-neptune-4-pro",
+    "slug": "elegoo-neptune-4-pro",
+    "name": "Elegoo Neptune 4 Pro",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de extrusor directo y alta velocidad, con nivelación automática y hotend apto para materiales de ingeniería básicos.",
+    "price": 45460,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Volumen de impresión": "225 × 225 × 265 mm (aprox.)",
+        "Extrusor": "Directo, todo-metal",
+        "Velocidad": "Alta velocidad (hasta ~500 mm/s según perfil)"
+      },
+      "features": [
+        "Nivelación automática de la cama.",
+        "Extrusor directo todo-metal, compatible con materiales más exigentes.",
+        "Buena relación precio-rendimiento para uso educativo e institucional."
+      ],
+      "note": "Valores de velocidad y volumen son de referencia del fabricante; confirmamos ficha exacta al cotizar.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-pro/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-orangestorm-giga",
+    "slug": "elegoo-orangestorm-giga",
+    "name": "Elegoo OrangeStorm Giga",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de formato extra grande, pensada para piezas de gran tamaño: muebles, prototipos grandes y proyectos industriales o educativos de escala.",
+    "price": 397730,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Formato": "Extra grande (una de las mayores de la línea Elegoo)"
+      },
+      "features": [
+        "Volumen de impresión muy superior al de una impresora de escritorio estándar.",
+        "Pensada para piezas grandes de una sola pieza, sin ensamblar.",
+        "Confirmamos volumen exacto y requerimientos de espacio al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/elegoo-orangestorm-giga/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-x1e",
+    "slug": "bambu-lab-x1-e-combo",
+    "name": "Bambu Lab X1 E Combo",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM CoreXY de alta velocidad y precisión, en versión Combo con sistema de múltiples materiales. Pensada para instituciones y uso intensivo.",
+    "price": 341900,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Estructura": "Cerrada",
+        "Multimaterial": "Compatible con sistema de cambio automático de filamento (Combo)"
+      },
+      "features": [
+        "Estructura CoreXY cerrada, de alta velocidad y precisión.",
+        "Combo incluye sistema para imprimir con varios colores/materiales sin intervención manual.",
+        "Pensada para uso intensivo en instituciones y laboratorios."
+      ],
+      "note": "Confirmamos ficha técnica completa (volumen, velocidad máxima) al cotizar.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-x1-e/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-creality-k2-plus",
+    "slug": "creality-k2-plus-combo",
+    "name": "Creality K2 Plus Combo",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de gran formato y alta velocidad, con sistema de múltiples colores incluido (Combo). Para proyectos grandes o de producción en serie.",
+    "price": 238640,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Creality",
+        "Volumen de impresión": "350 × 350 × 350 mm",
+        "Velocidad máxima": "600 mm/s",
+        "Cámara": "Calefactada",
+        "Multicolor": "Incluye CFS para 4 colores (1 unidad); se pueden agregar más CFS"
+      },
+      "features": [
+        "Gran volumen de impresión: 350 mm por lado.",
+        "Cámara calefactada, útil para materiales de ingeniería.",
+        "Sistema CFS incluido para imprimir hasta 4 colores sin intervención manual."
+      ],
+      "note": "La velocidad efectiva depende del material y perfil de impresión. Llegar a 16 colores requiere 4 unidades CFS en total (no incluidas).",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/creality-k2-plus/" },
+        { "title": "Ficha del fabricante · Creality", "url": "https://www.creality.com/products/creality-k2-plus-cfs-combo" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-h2c",
+    "slug": "bambu-lab-h2c",
+    "name": "Bambu Lab H2C",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de la serie H de Bambu Lab, de alta velocidad y estructura cerrada, pensada para producción exigente.",
+    "price": 411650,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Estructura": "Cerrada, alta velocidad"
+      },
+      "features": [
+        "Serie H de Bambu Lab, orientada a producción de alto rendimiento.",
+        "Estructura cerrada para mejor control térmico con materiales de ingeniería.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2c/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-neptune-4-max",
+    "slug": "elegoo-neptune-4-max",
+    "name": "Elegoo Neptune 4 Max",
+    "category": "Impresoras 3D",
+    "description": "Versión de mayor volumen de la línea Neptune 4: impresora FDM de alta velocidad para piezas grandes.",
+    "price": 71250,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Extrusor": "Directo, todo-metal",
+        "Formato": "Mayor volumen que el Neptune 4 Pro"
+      },
+      "features": [
+        "Mayor volumen de impresión que el Neptune 4 Pro, misma familia de alta velocidad.",
+        "Extrusor directo todo-metal.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-max/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-saturn-4-ultra-16k",
+    "slug": "elegoo-saturn-4-ultra-16k",
+    "name": "Elegoo Saturn 4 Ultra 16K",
+    "category": "Impresoras 3D",
+    "description": "Impresora de resina con pantalla monocromática 16K, de muy alta resolución para el máximo detalle en miniaturas y piezas de precisión.",
+    "price": 96600,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Resina (MSLA)",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Tecnología": "Resina, pantalla mono 16K"
+      },
+      "features": [
+        "Resolución 16K: una de las más altas disponibles en impresión de resina de escritorio.",
+        "Ideal para miniaturas de altísimo detalle y piezas de joyería.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/saturn-4-ultra-16k/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-creality-ender3-v3-ke",
+    "slug": "creality-ender-3-v3-ke",
+    "name": "Creality Ender-3 V3 KE",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de alta velocidad de la línea Ender-3, con extrusor directo y nivelación automática. Buena puerta de entrada a la impresión rápida.",
+    "price": 49659,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Creality",
+        "Volumen de impresión": "220 × 220 × 240 mm (aprox.)",
+        "Extrusor": "Directo",
+        "Velocidad": "Alta velocidad (hasta ~500 mm/s según perfil)"
+      },
+      "features": [
+        "Nivelación automática de la cama.",
+        "Extrusor directo, buen control de flujo con filamentos flexibles.",
+        "Buena opción de entrada a la impresión de alta velocidad."
+      ],
+      "note": "Valores de velocidad son de referencia del fabricante.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/creality-ender-3-v3-ke/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-wiibooxsweetin",
+    "slug": "wiibooxsweetin-chocolate",
+    "name": "Impresora 3D de chocolate WiibooxSweetin",
+    "category": "Impresoras 3D",
+    "description": "Impresora 3D especializada en chocolate: imprime figuras y decoraciones comestibles directamente desde un diseño digital. Producto de nicho para repostería y eventos.",
+    "price": 350000,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Impresión de alimentos (extrusión de chocolate)",
+      "specifications": {
+        "Marca": "Wiibooxsweetin",
+        "Uso": "Repostería, chocolatería, eventos"
+      },
+      "features": [
+        "Permite crear figuras y decoraciones de chocolate a partir de un diseño digital.",
+        "Pensada para repostería, chocolatería y eventos especiales.",
+        "Especificaciones técnicas completas: consúltanos, es un equipo de nicho poco común."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/wiibooxsweetin/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-p2s",
+    "slug": "bambu-lab-p2s",
+    "name": "Impresora Bambu Lab P2S",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de Bambu Lab de la línea P, con buen equilibrio entre precisión, velocidad y precio.",
+    "price": 170455,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Bambu Lab"
+      },
+      "features": [
+        "Impresora FDM de Bambu Lab, línea P.",
+        "Confirmamos ficha técnica completa (volumen, velocidad, accesorios) al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-p2s/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-neptune-4-plus",
+    "slug": "elegoo-neptune-4-plus",
+    "name": "Elegoo Neptune 4 Plus",
+    "category": "Impresoras 3D",
+    "description": "Variante de tamaño intermedio de la línea Neptune 4: impresora FDM de alta velocidad para piezas de tamaño medio-grande.",
+    "price": 56570,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Extrusor": "Directo, todo-metal",
+        "Formato": "Intermedio entre el Neptune 4 Pro y el Max"
+      },
+      "features": [
+        "Volumen de impresión mayor que el Neptune 4 Pro.",
+        "Extrusor directo todo-metal.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-plus/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-mars-5-ultra-9k",
+    "slug": "elegoo-mars-5-ultra-9k",
+    "name": "Elegoo Mars 5 Ultra 9K",
+    "category": "Impresoras 3D",
+    "description": "Impresora de resina con pantalla monocromática 9K, tamaño de escritorio, para miniaturas y piezas de detalle.",
+    "price": 60114,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Resina (MSLA)",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Tecnología": "Resina, pantalla mono 9K"
+      },
+      "features": [
+        "Buena resolución (9K) en un formato compacto de escritorio.",
+        "Ideal para miniaturas, figuras y piezas de precisión.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/mars-5-ultra-preventa/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-creality-ender3-v3-se",
+    "slug": "creality-ender-3-v3-se",
+    "name": "Creality Ender 3 V3 SE",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de entrada, extrusor directo y nivelación automática. La opción más accesible para empezar en impresión 3D.",
+    "price": 34100,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Creality",
+        "Volumen de impresión": "220 × 220 × 250 mm (aprox.)",
+        "Extrusor": "Directo",
+        "Nivelación": "Automática"
+      },
+      "features": [
+        "Opción más económica del catálogo: ideal para empezar en impresión 3D.",
+        "Extrusor directo con nivelación automática de la cama.",
+        "Buena opción para estudiantes y primeros proyectos institucionales."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/ender-3-v3-se/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-creality-cr30-print-mill",
+    "slug": "creality-cr-30-print-mill",
+    "name": "Creality CR-30 Print Mill",
+    "category": "Impresoras 3D",
+    "description": "Impresora de banda transportadora (eje Z infinito): permite imprimir piezas en serie de forma continua, una tras otra, sin intervención manual.",
+    "price": 110890,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM de banda (eje Z infinito)",
+      "specifications": {
+        "Marca": "Creality",
+        "Formato": "Banda transportadora, impresión continua"
+      },
+      "features": [
+        "Eje Z infinito: la banda transportadora permite imprimir piezas de gran longitud o en serie continua.",
+        "Cada pieza cae al terminar, liberando la banda para la siguiente impresión.",
+        "Pensada para producción en pequeña serie o piezas alargadas (ej. letreros)."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/cr-30-print-mill/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-a1m-combo",
+    "slug": "bambu-lab-a1m-combo",
+    "name": "Impresora Bambu Lab A1 Mini Combo",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM compacta de Bambu Lab, en versión Combo con sistema de múltiples colores (AMS lite). Buena opción para empezar con multicolor.",
+    "price": 73870,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Volumen de impresión": "180 × 180 × 180 mm (aprox.)",
+        "Multicolor": "Combo incluye sistema AMS lite (hasta 4 colores)"
+      },
+      "features": [
+        "Formato compacto, ideal para escritorio o aula.",
+        "Combo incluye sistema para imprimir hasta 4 colores sin intervención manual.",
+        "Buena opción de entrada al ecosistema Bambu Lab."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-a1mc/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bs80-letras",
+    "slug": "bs80-3d-letras-publicitarias",
+    "name": "BS80 3D Letras Publicitarias",
+    "category": "Impresoras 3D",
+    "description": "Impresora industrial especializada en letras y rótulos publicitarios en 3D, de gran formato. Producto de nicho para publicidad y señalética.",
+    "price": 426140,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM industrial, gran formato",
+      "specifications": {
+        "Uso": "Letras y rótulos publicitarios en 3D"
+      },
+      "features": [
+        "Especializada en producción de letras y rótulos tridimensionales para publicidad.",
+        "Formato industrial, pensada para talleres de señalética.",
+        "Especificaciones técnicas completas: consúltanos, es un equipo de nicho."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bs80-3d-letras-publicitarias/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-a1-mini",
+    "slug": "bambu-lab-a1-mini",
+    "name": "Impresora Bambu Lab A1 Mini",
+    "category": "Impresoras 3D",
+    "description": "Versión sin sistema multicolor de la A1 Mini: impresora FDM compacta, rápida y de fácil uso, ideal para aula o escritorio.",
+    "price": 45460,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Volumen de impresión": "180 × 180 × 180 mm (aprox.)",
+        "Estructura": "Abierta, compacta"
+      },
+      "features": [
+        "Formato compacto y ligero, fácil de mover entre aulas.",
+        "Buena velocidad y calidad de impresión para su tamaño.",
+        "Opción de entrada económica al ecosistema Bambu Lab."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-a1m-mini/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-elegoo-centauri-carbon-2-combo",
+    "slug": "elegoo-centauri-carbon-2-combo",
+    "name": "Elegoo Centauri Carbon 2 Combo",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM CoreXY cerrada, en versión Combo con sistema de múltiples materiales. Alta velocidad para uso intensivo.",
+    "price": 96600,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Elegoo",
+        "Estructura": "Cerrada",
+        "Multicolor": "Combo incluye sistema de cambio de material"
+      },
+      "features": [
+        "Estructura CoreXY cerrada de alta velocidad.",
+        "Combo incluye sistema para imprimir con varios materiales/colores.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/elegoo-centauri-carbon-2-combo/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-prusa-i3-mk3s",
+    "slug": "prusa-i3-mk3s",
+    "name": "Prusa i3 MK3S",
+    "category": "Impresoras 3D",
+    "description": "Clásico de la impresión 3D de escritorio: estructura abierta, muy confiable y ampliamente documentada, con nivelación automática y detección de filamento.",
+    "price": 105500,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM",
+      "specifications": {
+        "Marca": "Prusa Research",
+        "Volumen de impresión": "250 × 210 × 210 mm (aprox.)",
+        "Nivelación": "Automática (sensor SuperPINDA)",
+        "Detección de filamento": "Sí"
+      },
+      "features": [
+        "Uno de los modelos más documentados y confiables de la impresión 3D de escritorio.",
+        "Nivelación automática y sensor de fin de filamento.",
+        "Amplia comunidad y soporte para piezas de repuesto."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/prusa-i3-mk-3s/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-x1cc",
+    "slug": "bambu-lab-x1cc",
+    "name": "Impresora Bambu Lab X1CC",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM CoreXY de gama alta de Bambu Lab, en versión Combo con sistema de múltiples materiales. Estructura cerrada de alta precisión.",
+    "price": 232953,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Estructura": "Cerrada",
+        "Multicolor": "Combo incluye sistema de cambio automático de filamento"
+      },
+      "features": [
+        "Gama alta de Bambu Lab: alta velocidad y precisión.",
+        "Combo incluye sistema para imprimir con varios colores/materiales.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-x1cc/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-md-600d",
+    "slug": "md-600d",
+    "name": "MD-600D",
+    "category": "Impresoras 3D",
+    "description": "Impresora industrial de gran formato, para producción de piezas grandes o de alto volumen. Equipo de gama industrial.",
+    "price": 1829950,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Industrial, gran formato",
+      "specifications": {
+        "Categoría": "Industrial"
+      },
+      "features": [
+        "Equipo de gama industrial, pensado para producción de mayor volumen o piezas grandes.",
+        "Especificaciones técnicas completas y condiciones de instalación: consúltanos directamente."
+      ],
+      "note": "Por ser un equipo industrial de alto valor, la cotización incluye asesoría personalizada.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/md-600d/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-h2d-laser-combo",
+    "slug": "bambu-lab-h2d-laser-combo-10w",
+    "name": "Bambu Lab H2D Láser Combo 10W",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de la serie H de Bambu Lab con módulo láser de 10W integrado: imprime en 3D y además graba/corta con láser. En preventa, con descuento.",
+    "price": 420000,
+    "active": 1,
+    "featured": 1,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM + módulo láser 10W",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Módulo adicional": "Láser de 10W para grabado y corte",
+        "Estado": "Preventa"
+      },
+      "features": [
+        "Combina impresión 3D FDM con grabado y corte láser de 10W en un mismo equipo.",
+        "Ideal para proyectos que combinan piezas impresas con grabado/corte (señalética, cajas, decoración).",
+        "En preventa: precio de oferta $4.200 (precio regular $5.100)."
+      ],
+      "note": "Al ser preventa, los tiempos de entrega pueden ser más largos; confirmamos plazo exacto al cotizar.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2d/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-md-1000d",
+    "slug": "md-1000d",
+    "name": "MD-1000D",
+    "category": "Impresoras 3D",
+    "description": "Impresora industrial de muy gran formato, tope de línea entre los equipos industriales del catálogo. Para producción de alto volumen o piezas de gran tamaño.",
+    "price": 3025999,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "Industrial, gran formato",
+      "specifications": {
+        "Categoría": "Industrial, tope de línea"
+      },
+      "features": [
+        "Equipo industrial de mayor formato y capacidad del catálogo SKP3D.",
+        "Especificaciones técnicas completas y condiciones de instalación: consúltanos directamente."
+      ],
+      "note": "Por ser un equipo industrial de alto valor, la cotización incluye asesoría personalizada.",
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/md-1000d/" }
+      ]
+    }
+  },
+  {
+    "id": "impresora-bambu-lab-h2s-combo",
+    "slug": "bambu-lab-h2s-combo",
+    "name": "Bambu Lab H2S Combo",
+    "category": "Impresoras 3D",
+    "description": "Impresora FDM de la serie H de Bambu Lab, en versión Combo con sistema de múltiples materiales, sin módulo láser.",
+    "price": 275030,
+    "active": 1,
+    "featured": 0,
+    "demo": false,
+    "status": "available",
+    "images": [],
+    "details": {
+      "technology": "FDM CoreXY",
+      "specifications": {
+        "Marca": "Bambu Lab",
+        "Multicolor": "Combo incluye sistema de cambio automático de filamento"
+      },
+      "features": [
+        "Serie H de Bambu Lab, alta velocidad y producción exigente.",
+        "Combo incluye sistema para imprimir con varios colores/materiales.",
+        "Confirmamos ficha técnica completa al cotizar."
+      ],
+      "sources": [
+        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2s/" }
       ]
     }
   }
