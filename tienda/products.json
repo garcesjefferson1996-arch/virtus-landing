@@ -432,13 +432,29 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/filamento-skp3d-abs.jpg", "alt": "Bobina de filamento ABS rojo del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/filamento-skp3d-abs.jpg",
+        "alt": "Bobina de filamento ABS rojo del catálogo SKP3D"
+      }
     ],
     "colors": [
-      { "name": "Blanco", "hex": "#ffffff" },
-      { "name": "Gris", "hex": "#8a8d90" },
-      { "name": "Negro", "hex": "#242424" },
-      { "name": "Rojo", "hex": "#ca292f" }
+      {
+        "name": "Blanco",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Gris",
+        "hex": "#8a8d90"
+      },
+      {
+        "name": "Negro",
+        "hex": "#242424"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#ca292f"
+      }
     ],
     "details": {
       "specifications": {
@@ -455,7 +471,10 @@
       ],
       "note": "El warping es más frecuente que con PLA; recomendamos impresora con recinto cerrado. Confirmamos color exacto disponible al pedir.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/abs/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/abs/"
+        }
       ]
     }
   },
@@ -471,7 +490,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/filamento-skp3d-pla-multicolor.jpg", "alt": "Bobina de filamento PLA Multicolor del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/filamento-skp3d-pla-multicolor.jpg",
+        "alt": "Bobina de filamento PLA Multicolor del catálogo SKP3D"
+      }
     ],
     "details": {
       "specifications": {
@@ -487,7 +510,10 @@
       ],
       "note": "El patrón exacto de colores depende del lote de la bobina.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-multicolor/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/pla-multicolor/"
+        }
       ]
     }
   },
@@ -503,7 +529,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/filamento-skp3d-pla-tricolor.jpg", "alt": "Bobina de filamento PLA Tricolor del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/filamento-skp3d-pla-tricolor.jpg",
+        "alt": "Bobina de filamento PLA Tricolor del catálogo SKP3D"
+      }
     ],
     "details": {
       "specifications": {
@@ -519,7 +549,10 @@
         "Varias combinaciones de colores disponibles; confirmamos existencia al pedir."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-tricolor/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/pla-tricolor/"
+        }
       ]
     }
   },
@@ -548,7 +581,10 @@
         "El nivel de transparencia depende del espesor de la pared impresa."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pla-tranlucido/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/pla-tranlucido/"
+        }
       ]
     }
   },
@@ -579,7 +615,10 @@
       ],
       "note": "Material técnico: recomendado para usuarios con experiencia previa en impresión 3D.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/pc/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/pc/"
+        }
       ]
     }
   },
@@ -595,7 +634,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/impresora-anycubic-photon-m3-max.jpg", "alt": "Impresora Anycubic Photon M3 Max 7K del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/impresora-anycubic-photon-m3-max.jpg",
+        "alt": "Impresora Anycubic Photon M3 Max 7K del catálogo SKP3D"
+      }
     ],
     "details": {
       "technology": "Resina (MSLA)",
@@ -611,7 +654,10 @@
       ],
       "note": "Confirmamos volumen de impresión exacto y accesorios incluidos al cotizar.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/photon-m3-max/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/photon-m3-max/"
+        }
       ]
     }
   },
@@ -627,7 +673,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/impresora-anycubic-photon-mono-m7-pro.jpg", "alt": "Impresora Anycubic Photon Mono M7 Pro del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/impresora-anycubic-photon-mono-m7-pro.jpg",
+        "alt": "Impresora Anycubic Photon Mono M7 Pro del catálogo SKP3D"
+      }
     ],
     "details": {
       "technology": "Resina (MSLA)",
@@ -641,7 +691,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/anycubic-photon-mono-m7-pro/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/anycubic-photon-mono-m7-pro/"
+        }
       ]
     }
   },
@@ -657,7 +710,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/impresora-anycubic-photon-mono-m7-max.jpg", "alt": "Impresora Anycubic Photon Mono M7 Max del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/impresora-anycubic-photon-mono-m7-max.jpg",
+        "alt": "Impresora Anycubic Photon Mono M7 Max del catálogo SKP3D"
+      }
     ],
     "details": {
       "technology": "Resina (MSLA)",
@@ -672,7 +729,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/anycubic-photon-mono-m7-max/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/anycubic-photon-mono-m7-max/"
+        }
       ]
     }
   },
@@ -688,7 +748,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/impresora-elegoo-neptune-4-pro.jpg", "alt": "Impresora Elegoo Neptune 4 Pro del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-neptune-4-pro.jpg",
+        "alt": "Impresora Elegoo Neptune 4 Pro del catálogo SKP3D"
+      }
     ],
     "details": {
       "technology": "FDM",
@@ -705,7 +769,10 @@
       ],
       "note": "Valores de velocidad y volumen son de referencia del fabricante; confirmamos ficha exacta al cotizar.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-pro/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/neptune-4-pro/"
+        }
       ]
     }
   },
@@ -721,7 +788,11 @@
     "demo": false,
     "status": "available",
     "images": [
-      { "kind": "image", "url": "./assets/impresora-elegoo-orangestorm-giga.jpg", "alt": "Impresora Elegoo OrangeStorm Giga del catálogo SKP3D" }
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-orangestorm-giga.jpg",
+        "alt": "Impresora Elegoo OrangeStorm Giga del catálogo SKP3D"
+      }
     ],
     "details": {
       "technology": "FDM",
@@ -735,7 +806,10 @@
         "Confirmamos volumen exacto y requerimientos de espacio al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/elegoo-orangestorm-giga/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/elegoo-orangestorm-giga/"
+        }
       ]
     }
   },
@@ -750,7 +824,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-x1e.jpg",
+        "alt": "Impresora Bambu Lab X1E del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM CoreXY",
       "specifications": {
@@ -765,7 +845,10 @@
       ],
       "note": "Confirmamos ficha técnica completa (volumen, velocidad máxima) al cotizar.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-x1-e/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-x1-e/"
+        }
       ]
     }
   },
@@ -780,7 +863,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-creality-k2-plus.jpg",
+        "alt": "Impresora Creality K2 Plus del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM CoreXY",
       "specifications": {
@@ -797,8 +886,14 @@
       ],
       "note": "La velocidad efectiva depende del material y perfil de impresión. Llegar a 16 colores requiere 4 unidades CFS en total (no incluidas).",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/creality-k2-plus/" },
-        { "title": "Ficha del fabricante · Creality", "url": "https://www.creality.com/products/creality-k2-plus-cfs-combo" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/creality-k2-plus/"
+        },
+        {
+          "title": "Ficha del fabricante · Creality",
+          "url": "https://www.creality.com/products/creality-k2-plus-cfs-combo"
+        }
       ]
     }
   },
@@ -813,7 +908,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-h2c.jpg",
+        "alt": "Impresora Bambu Lab H2C del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM CoreXY",
       "specifications": {
@@ -826,7 +927,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2c/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-h2c/"
+        }
       ]
     }
   },
@@ -841,7 +945,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-neptune-4-max.jpg",
+        "alt": "Impresora Elegoo Neptune 4 Max del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -855,7 +965,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-max/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/neptune-4-max/"
+        }
       ]
     }
   },
@@ -870,7 +983,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-saturn-4-ultra-16k.jpg",
+        "alt": "Impresora Elegoo Saturn 4 Ultra 16K del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "Resina (MSLA)",
       "specifications": {
@@ -883,7 +1002,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/saturn-4-ultra-16k/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/saturn-4-ultra-16k/"
+        }
       ]
     }
   },
@@ -898,7 +1020,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-creality-ender3-v3-ke.jpg",
+        "alt": "Impresora Creality Ender-3 V3 KE del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -914,7 +1042,10 @@
       ],
       "note": "Valores de velocidad son de referencia del fabricante.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/creality-ender-3-v3-ke/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/creality-ender-3-v3-ke/"
+        }
       ]
     }
   },
@@ -929,7 +1060,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-wiibooxsweetin.jpg",
+        "alt": "Impresora Wiiboox Sweetin del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "Impresión de alimentos (extrusión de chocolate)",
       "specifications": {
@@ -942,7 +1079,10 @@
         "Especificaciones técnicas completas: consúltanos, es un equipo de nicho poco común."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/wiibooxsweetin/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/wiibooxsweetin/"
+        }
       ]
     }
   },
@@ -957,7 +1097,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-p2s.jpg",
+        "alt": "Impresora Bambu Lab P2S del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -968,7 +1114,10 @@
         "Confirmamos ficha técnica completa (volumen, velocidad, accesorios) al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-p2s/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-p2s/"
+        }
       ]
     }
   },
@@ -983,7 +1132,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-neptune-4-plus.jpg",
+        "alt": "Impresora Elegoo Neptune 4 Plus del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -997,7 +1152,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/neptune-4-plus/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/neptune-4-plus/"
+        }
       ]
     }
   },
@@ -1012,7 +1170,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-mars-5-ultra-9k.jpg",
+        "alt": "Impresora Elegoo Mars 5 Ultra 9K del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "Resina (MSLA)",
       "specifications": {
@@ -1025,7 +1189,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/mars-5-ultra-preventa/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/mars-5-ultra-preventa/"
+        }
       ]
     }
   },
@@ -1040,7 +1207,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-creality-ender3-v3-se.jpg",
+        "alt": "Impresora Creality Ender-3 V3 SE del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -1055,7 +1228,10 @@
         "Buena opción para estudiantes y primeros proyectos institucionales."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/ender-3-v3-se/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/ender-3-v3-se/"
+        }
       ]
     }
   },
@@ -1070,7 +1246,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-creality-cr30-print-mill.jpg",
+        "alt": "Impresora Creality CR-30 Print Mill del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM de banda (eje Z infinito)",
       "specifications": {
@@ -1083,7 +1265,10 @@
         "Pensada para producción en pequeña serie o piezas alargadas (ej. letreros)."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/cr-30-print-mill/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/cr-30-print-mill/"
+        }
       ]
     }
   },
@@ -1098,7 +1283,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-a1m-combo.jpg",
+        "alt": "Impresora Bambu Lab A1 Combo del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -1112,7 +1303,10 @@
         "Buena opción de entrada al ecosistema Bambu Lab."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-a1mc/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-a1mc/"
+        }
       ]
     }
   },
@@ -1127,7 +1321,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bs80-letras.jpg",
+        "alt": "Impresora BS80 3D Letras Publicitarias del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM industrial, gran formato",
       "specifications": {
@@ -1139,7 +1339,10 @@
         "Especificaciones técnicas completas: consúltanos, es un equipo de nicho."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bs80-3d-letras-publicitarias/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bs80-3d-letras-publicitarias/"
+        }
       ]
     }
   },
@@ -1154,7 +1357,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-a1-mini.jpg",
+        "alt": "Impresora Bambu Lab A1 Mini del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -1168,7 +1377,10 @@
         "Opción de entrada económica al ecosistema Bambu Lab."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-a1m-mini/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-a1m-mini/"
+        }
       ]
     }
   },
@@ -1183,7 +1395,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-elegoo-centauri-carbon-2-combo.jpg",
+        "alt": "Impresora Elegoo Centauri Carbon 2 Combo del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM CoreXY",
       "specifications": {
@@ -1197,7 +1415,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/elegoo-centauri-carbon-2-combo/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/elegoo-centauri-carbon-2-combo/"
+        }
       ]
     }
   },
@@ -1212,7 +1433,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-prusa-i3-mk3s.jpg",
+        "alt": "Impresora Prusa i3 MK3S del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -1227,7 +1454,10 @@
         "Amplia comunidad y soporte para piezas de repuesto."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/prusa-i3-mk-3s/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/prusa-i3-mk-3s/"
+        }
       ]
     }
   },
@@ -1242,7 +1472,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-x1cc.jpg",
+        "alt": "Impresora Bambu Lab X1 Carbon del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM CoreXY",
       "specifications": {
@@ -1256,7 +1492,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-x1cc/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-x1cc/"
+        }
       ]
     }
   },
@@ -1271,7 +1510,13 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-md-600d.jpg",
+        "alt": "Impresora MD-600D del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "Industrial, gran formato",
       "specifications": {
@@ -1283,7 +1528,10 @@
       ],
       "note": "Por ser un equipo industrial de alto valor, la cotización incluye asesoría personalizada.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/md-600d/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/md-600d/"
+        }
       ]
     }
   },
@@ -1298,7 +1546,13 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      {
+        "kind": "image",
+        "url": "./assets/impresora-bambu-lab-h2d-laser-combo.jpg",
+        "alt": "Impresora Bambu Lab H2D Combo del catálogo SKP3D"
+      }
+    ],
     "details": {
       "technology": "FDM + módulo láser 10W",
       "specifications": {
@@ -1313,7 +1567,10 @@
       ],
       "note": "Al ser preventa, los tiempos de entrega pueden ser más largos; confirmamos plazo exacto al cotizar.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2d/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-h2d/"
+        }
       ]
     }
   },
@@ -1340,7 +1597,10 @@
       ],
       "note": "Por ser un equipo industrial de alto valor, la cotización incluye asesoría personalizada.",
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/md-1000d/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/md-1000d/"
+        }
       ]
     }
   },
@@ -1368,7 +1628,10 @@
         "Confirmamos ficha técnica completa al cotizar."
       ],
       "sources": [
-        { "title": "Ficha comercial · SKP3D", "url": "https://skp3d.com/product/bambu-lab-h2s/" }
+        {
+          "title": "Ficha comercial · SKP3D",
+          "url": "https://skp3d.com/product/bambu-lab-h2s/"
+        }
       ]
     }
   }
