@@ -431,7 +431,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/filamento-skp3d-abs.jpg", "alt": "Bobina de filamento ABS rojo del catálogo SKP3D" }
+    ],
     "colors": [
       { "name": "Blanco", "hex": "#ffffff" },
       { "name": "Gris", "hex": "#8a8d90" },
@@ -468,7 +470,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/filamento-skp3d-pla-multicolor.jpg", "alt": "Bobina de filamento PLA Multicolor del catálogo SKP3D" }
+    ],
     "details": {
       "specifications": {
         "Material": "PLA multicolor (degradado)",
@@ -498,7 +502,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/filamento-skp3d-pla-tricolor.jpg", "alt": "Bobina de filamento PLA Tricolor del catálogo SKP3D" }
+    ],
     "details": {
       "specifications": {
         "Material": "PLA tricolor",
@@ -588,7 +594,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/impresora-anycubic-photon-m3-max.jpg", "alt": "Impresora Anycubic Photon M3 Max 7K del catálogo SKP3D" }
+    ],
     "details": {
       "technology": "Resina (MSLA)",
       "specifications": {
@@ -618,7 +626,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/impresora-anycubic-photon-mono-m7-pro.jpg", "alt": "Impresora Anycubic Photon Mono M7 Pro del catálogo SKP3D" }
+    ],
     "details": {
       "technology": "Resina (MSLA)",
       "specifications": {
@@ -646,7 +656,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/impresora-anycubic-photon-mono-m7-max.jpg", "alt": "Impresora Anycubic Photon Mono M7 Max del catálogo SKP3D" }
+    ],
     "details": {
       "technology": "Resina (MSLA)",
       "specifications": {
@@ -675,7 +687,9 @@
     "featured": 1,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/impresora-elegoo-neptune-4-pro.jpg", "alt": "Impresora Elegoo Neptune 4 Pro del catálogo SKP3D" }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
@@ -706,7 +720,9 @@
     "featured": 0,
     "demo": false,
     "status": "available",
-    "images": [],
+    "images": [
+      { "kind": "image", "url": "./assets/impresora-elegoo-orangestorm-giga.jpg", "alt": "Impresora Elegoo OrangeStorm Giga del catálogo SKP3D" }
+    ],
     "details": {
       "technology": "FDM",
       "specifications": {
